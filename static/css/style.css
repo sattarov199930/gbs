@@ -1,0 +1,130 @@
+/* Reset some basic elements */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+header {
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.logo, nav {
+    margin: 0 10rem; /* Adds margin to both sides of the logo and nav */
+}
+
+nav {
+    background-color: transparent; /* Makes the nav background transparent to inherit from header */
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0; /* Ensures no extra space on the outside of the navigation */
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #5f5f5f;
+    font-weight: 700;
+    padding: 0.5rem 0.75rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background-color: #0056b3;
+    color: #fff;
+    border-radius: 5px; /* Ensures the rounded corners are always present */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for all properties */
+}
+
+main {
+    padding: 1rem;
+    max-width: 70rem;
+    margin: 20px auto;
+    text-align: center;
+}
+
+footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 10px 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.8em;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.home-banner {
+    background-image: url('../images/1.jpg');                                       /* Path to your image */
+    background-size: cover;                                                         /* Cover the entire div */
+    background-position: center;                                                    /* Center the background image */
+    padding: 200px;                                                                  /* Add padding to ensure the text does not touch the edges */
+    color: white;                                                                 /* Change text color for better visibility */
+    position: relative;                                                             /* Ensure it stays in flow */
+    margin: 20px auto;                                                              /* Centering the div */
+    text-align: center;                                                             /* Center text alignment */
+    background-attachment: local;                                                   /* Optional: fixes the background during scroll */
+}
+
+.home-banner p {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for legibility */
+    padding: 20px; /* Padding inside the text container */
+    border-radius: 10px; /* Rounded corners for aesthetic */
+}
+
+.page {
+    height: 50rem; /* Height in rem */
+    overflow-x: hidden; /* Hide horizontal overflow */
+    scroll-snap-type: y mandatory; /* Enable scroll snapping */
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+/* Define styles for individual pages */
+#page1 {
+    background-color: #84bcf7; /* Background color for page 1 */
+}
+
+#page2 {
+    background-color: #ffc107; /* Background color for page 2 */
+}
+
+.page::after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(50%);
+    width: 30px;
+    height: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 2.5px;
+}
