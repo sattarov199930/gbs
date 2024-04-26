@@ -1,4 +1,4 @@
-/* Reset some basic elements */
+/* ------------------------------ General Setup ----------------------------- */
 body, h1, p, ul, li {
     margin: 0;
     padding: 0;
@@ -9,14 +9,16 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
+/* ------------------------------- Logo & Menu ------------------------------ */
 header {
     background: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-transform: uppercase;
 }
 
 .logo {
@@ -26,7 +28,7 @@ header {
 }
 
 .logo, nav {
-    margin: 0 10rem; /* Adds margin to both sides of the logo and nav */
+    margin: 3px 3px; /* Adds margin to both sides of the logo and nav */
 }
 
 nav {
@@ -37,8 +39,8 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    padding: 0;
-    margin: 0; /* Ensures no extra space on the outside of the navigation */
+    padding: 5px;
+    margin: 5px; /* Ensures no extra space on the outside of the navigation */
 }
 
 nav ul li {
@@ -49,25 +51,25 @@ nav ul li a {
     text-decoration: none;
     color: #5f5f5f;
     font-weight: 700;
-    padding: 0.5rem 0.75rem;
+    padding: 1rem 1rem;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
 }
 
 nav ul li a:hover, nav ul li a:focus {
-    background-color: #0056b3;
+    background-color: #2b14ab;
     color: #fff;
     border-radius: 5px; /* Ensures the rounded corners are always present */
     transition: background-color 0.3s, color 0.3s; /* Smooth transition for all properties */
 }
 
+/* -------------------------------- Main Body ------------------------------- */
 main {
-    padding: 1rem;
-    max-width: 70rem;
     margin: 20px auto;
     text-align: center;
 }
 
+/* --------------------------------- Footer --------------------------------- */
 footer {
     background-color: #f8f9fa;
     text-align: center;
@@ -78,6 +80,7 @@ footer {
     font-size: 0.8em;
 }
 
+/* --------------------------------- Page #1 -------------------------------- */
 .img-fluid {
     max-width: 100%;
     height: auto;
@@ -90,41 +93,80 @@ footer {
     padding: 200px;                                                                  /* Add padding to ensure the text does not touch the edges */
     color: white;                                                                 /* Change text color for better visibility */
     position: relative;                                                             /* Ensure it stays in flow */
-    margin: 20px auto;                                                              /* Centering the div */
+    margin: 10px auto;                                                              /* Centering the div */
     text-align: center;                                                             /* Center text alignment */
     background-attachment: local;                                                   /* Optional: fixes the background during scroll */
 }
 
 .home-banner p {
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for legibility */
-    padding: 20px; /* Padding inside the text container */
-    border-radius: 10px; /* Rounded corners for aesthetic */
+    background-color: rgba(100, 100, 255, 0.5);                                           /* Semi-transparent background for legibility */
+    padding: 20px;                                                                      /* Padding inside the text container */
+    border-radius: 10px;                                                            /* Rounded corners for aesthetic */
 }
 
-.page {
-    height: 50rem; /* Height in rem */
-    overflow-x: hidden; /* Hide horizontal overflow */
-    scroll-snap-type: y mandatory; /* Enable scroll snapping */
-    scroll-behavior: smooth; /* Smooth scrolling */
+/* --------------------------------- Page #2 -------------------------------- */
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px; /* Adjust width as necessary */
 }
 
-/* Define styles for individual pages */
-#page1 {
-    background-color: #84bcf7; /* Background color for page 1 */
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 30%; /* Flex-grow, Flex-shrink, Flex-basis */
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 15px;
+    text-align: center;
+    margin: 10px;
+    min-height: 300px; /* Minimum height to maintain size consistency */
 }
 
-#page2 {
-    background-color: #ffc107; /* Background color for page 2 */
+.box img {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    object-fit: cover; /* Ensures the image covers the area without being stretched */
 }
 
-.page::after {
-    content: '';
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(50%);
-    width: 30px;
-    height: 5px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 2.5px;
+.box p {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    object-fit: cover;
 }
+
+.box button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8d8d8d;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* Makes the button take the full width of the box */
+    font-size: 14px;
+    font-weight: 70;
+    text-transform: uppercase;
+}
+
+.box button:hover {
+    background-color: #2b14ab;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    padding: 10px;
+}
+
