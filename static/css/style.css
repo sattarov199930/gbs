@@ -1,4 +1,9 @@
 /* ------------------------------ General Setup ----------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+  }
+
 body, h1, p, ul, li {
     margin: 0;
     padding: 0;
@@ -7,9 +12,12 @@ body, h1, p, ul, li {
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
     color: #333;
     background-color: #ffffff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
 }
 
 /* ------------------------------- Logo & Menu ------------------------------ */
@@ -37,21 +45,28 @@ nav {
 }
 
 nav ul {
+    width: 100%;
     list-style: none;
     display: flex;
-    padding: 5px;
-    margin: 5px; /* Ensures no extra space on the outside of the navigation */
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 10px;
+    /*padding: 5px;
+    margin: 5px;*/ /* Ensures no extra space on the outside of the navigation */
 }
 
 nav ul li {
-    margin-left: 1rem;
+    margin-left: 10px;
 }
 
-nav ul li a {
+nav a {
+    height: 100%;
+    padding: 10px 20px;
     text-decoration: none;
+    align-items: center;
+    display: flex;
     color: #5f5f5f;
     font-weight: 700;
-    padding: 1rem 1rem;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -63,6 +78,51 @@ nav ul li a:hover, nav ul li a:focus {
     transition: background-color 0.3s, color 0.3s; /* Smooth transition for all properties */
 }
 
+nav li:first-child{
+    margin-right: auto;
+}
+
+.sidebar {
+    background-color: #fff; /* Solid background color */
+    width: 250px; /* Adjust as necessary */
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1050; /* Higher z-index to be on top */
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2); /* Adds a shadow for better visibility */
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%); /* Starts off-screen */
+}
+
+  .sidebar li{
+    width: 100%;
+  }
+  .sidebar a{
+    width: 100%;
+  }
+  .menu-button {
+    display: none; /* Hidden on larger screens */
+    cursor: pointer;
+}
+
+@media(max-width: 800px){
+    .hideOnMobile{
+      display: none;
+    }
+    .menu-button{
+      display: block;
+    }
+  }
+@media(max-width: 400px){
+    .sidebar{
+      width: 100%;
+      top: 0;
+      
+    }
+  }
 /* -------------------------------- Main Body ------------------------------- */
 main {
     margin: 20px auto;
@@ -90,7 +150,9 @@ footer {
     background-image: url('../images/1.jpg');                                       /* Path to your image */
     background-size: cover;                                                         /* Cover the entire div */
     background-position: center;                                                    /* Center the background image */
-    padding: 200px;                                                                  /* Add padding to ensure the text does not touch the edges */
+    background-repeat: no-repeat;
+    min-height: 20rem;
+    padding: 8rem;                                                                  /* Add padding to ensure the text does not touch the edges */
     color: white;                                                                 /* Change text color for better visibility */
     position: relative;                                                             /* Ensure it stays in flow */
     margin: 10px auto;                                                              /* Centering the div */
@@ -170,3 +232,27 @@ footer {
     padding: 10px;
 }
 
+/* ------------------------------ The world map ----------------------------- */
+#map-container svg {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+}
+
+path {
+    fill: #cccccc; /* Default color */
+    stroke: #ffffff; /* Borders */
+    stroke-width: 1;
+    transition: fill 0.3s ease-in-out;
+
+}
+
+path:hover {
+    fill: #007bff; /* Highlight color on hover */
+}
+
+path.active {
+    fill: #ff5722; /* Color when a state is clicked */
+}
