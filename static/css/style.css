@@ -147,7 +147,7 @@ footer {
 }
 
 .home-banner {
-    background-image: url('../images/1.jpg');                                       /* Path to your image */
+    background-image: url('../images/1.JPG');                                       /* Path to your image */
     background-size: cover;                                                         /* Cover the entire div */
     background-position: center;                                                    /* Center the background image */
     background-repeat: no-repeat;
