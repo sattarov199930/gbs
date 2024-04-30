@@ -51,8 +51,7 @@ nav ul {
     justify-content: flex-end;
     align-items: center;
     margin-left: 10px;
-    /*padding: 5px;
-    margin: 5px;*/ /* Ensures no extra space on the outside of the navigation */
+
 }
 
 nav ul li {
@@ -60,7 +59,6 @@ nav ul li {
 }
 
 nav a {
-    height: 100%;
     padding: 10px 20px;
     text-decoration: none;
     align-items: center;
@@ -104,8 +102,10 @@ nav li:first-child{
     width: 100%;
   }
   .menu-button {
-    display: none; /* Hidden on larger screens */
+    position: relative; /* If needed */
+    display: none; /* Ensures it appears where expected */
     cursor: pointer;
+    z-index: 1050; /* Ensure it doesn't overlap modal inappropriately */
 }
 
 @media(max-width: 800px){
@@ -155,7 +155,7 @@ footer {
     padding: 8rem;                                                                  /* Add padding to ensure the text does not touch the edges */
     color: white;                                                                 /* Change text color for better visibility */
     position: relative;                                                             /* Ensure it stays in flow */
-    margin: 10px auto;                                                              /* Centering the div */
+    margin: auto auto;                                                              /* Centering the div */
     text-align: center;                                                             /* Center text alignment */
     background-attachment: local;                                                   /* Optional: fixes the background during scroll */
 }
@@ -233,20 +233,36 @@ footer {
 }
 
 /* ------------------------------ The world map ----------------------------- */
-#map-container svg {
+/* Keyframes for breathing gloss effect */
+@keyframes breathingGloss {
+    0%, 100% {
+        stroke-width: 1;
+        stroke-opacity: 1;
+    }
+    50% {
+        stroke-width: 4;
+        stroke-opacity: 0.5;
+    }
+}
+
+#map-container {
+    width: 100%;  /*Ensure the container is full-width */
+    max-width: 100%;  /*Limit maximum width to avoid overflow*/ 
+} 
+
+#map-container object {
     display: block;
-    margin: auto;
-    width: 100%;
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
     max-width: 1000px;
-    height: auto;
+    margin: auto;
 }
 
 path {
-    fill: #cccccc; /* Default color */
-    stroke: #ffffff; /* Borders */
+    fill: #cccccc; /* Default gray color */
+    stroke: #ff0000; /* Borders */
     stroke-width: 1;
-    transition: fill 0.3s ease-in-out;
-
+    transition: fill 0.3s, stroke-width 0.3s, stroke-opacity 0.3s;
 }
 
 path:hover {
@@ -254,5 +270,47 @@ path:hover {
 }
 
 path.active {
-    fill: #ff5722; /* Color when a state is clicked */
+    fill: #ff5722; /* Color when a country is clicked */
+    stroke: #ff0000; /* Red stroke */
+    animation: breathingGloss 2s infinite ease-in-out; /* Apply the animation */
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    position: relative;  /* This ensures it acts as a reference for absolute children */
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    border-radius: 15px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;  /* Adjust based on your preference */
+    right: 10px;  /* Adjust based on your preference */
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;  /* Ensures it's clickable */
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
