@@ -121,6 +121,35 @@ function createContentElement(elementType, content, attribute) {
     return element;
 }
 
+/* ------------------------------ The Hero Page ----------------------------- */
+document.addEventListener('DOMContentLoaded', function() {
+    const description = document.getElementById('company-description');
+    const additionalContent = document.getElementById('additional-content');
+    
+    // Make the description visible first
+    setTimeout(() => {
+        description.style.opacity = 1;
+    }); // Description appears after 500ms
+
+    // Then slide in the additional content
+    setTimeout(() => {
+        additionalContent.style.opacity = 1;
+        additionalContent.style.transform = "translateX(0)"; // Reset to original position
+    }, 4000);
+
+    // Additionally handle the appearance on scroll
+    window.addEventListener('scroll', function() {
+        if (window.scrollY + window.innerHeight >= additionalContent.offsetTop) {
+            if (additionalContent.style.opacity !== "1") {
+                additionalContent.style.opacity = 1;
+                additionalContent.style.transform = "translateX(0)"; // Ensure it's visible and in place if not already
+            }
+        }
+    });
+});
+
+
+
 
 
 
