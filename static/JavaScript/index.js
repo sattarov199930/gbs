@@ -54,7 +54,6 @@ const countryData = {
 
 document.addEventListener('DOMContentLoaded', function() {
     const object = document.getElementById('svgMap');
-
     object.addEventListener('load', function() {
         const svgDocument = object.contentDocument;
         const paths = svgDocument.querySelectorAll('path');
@@ -76,35 +75,53 @@ document.addEventListener('DOMContentLoaded', function() {
 
         paths.forEach(path => {
             if (countryData[path.id]) {
-                path.style.fill = '#2b14ab'; // Set blue color for clickable countries
+                path.style.cursor = 'pointer'; // Ensure cursor changes on hover over clickable countries
+                path.style.fill = '#2b14ab'
+                path.addEventListener('mouseenter', function() {
+                    this.style.fill = '#ff5722'; // Optional: Highlight color on mouse enter
+                });
+
+                path.addEventListener('mouseleave', function() {
+                    this.style.fill = '#2b14ab'; // Reset fill color on mouse leave
+                });
+
                 path.addEventListener('click', function() {
                     paths.forEach(p => {
                         p.classList.remove('active');
                         p.style.stroke = "";
                         p.style.strokeWidth = "";
+                        this.style.fill='#2b14ab'
                     });
-                    this.classList.add('active');
-                    this.style.stroke = "#ff0000";
-                    this.style.strokeWidth = "1px";
 
-                    // Set content based on country ID
-                    countryTitle.textContent = countryData[path.id].title;
-                    countryDesc.textContent = countryData[path.id].description;
-                    countryImage.src = countryData[path.id].imageUrl;
-                    countryInfo.innerHTML = ''; // Clear previous content
-                    countryInfo.appendChild(countryTitle);
-                    countryInfo.appendChild(countryImage);
-                    countryInfo.appendChild(countryDesc);
-
-                    infoModal.style.display = "block";
+                this.classList.add('active');
+                this.style.stroke = "#ff0000";
+                this.style.strokeWidth = "1px";
+                this.classList.add('active');
+                countryInfo.innerHTML = ''; // Clear previous content
+                countryInfo.appendChild(createContentElement('h1', countryData[path.id].title));
+                countryInfo.appendChild(createContentElement('img', countryData[path.id].imageUrl, 'src'));
+                countryInfo.appendChild(createContentElement('p', countryData[path.id].description));
+                infoModal.style.display = "block";
                 });
             } else {
-                path.style.fill = '#cccccc'; // Non-clickable countries
-                path.style.pointerEvents = 'none'; // Disable interactions for non-clickable countries
+                path.style.fill = '#cccccc'; // Set non-clickable countries to default color
+                path.style.pointerEvents = 'none'; // Disable interaction
             }
         });
     });
 });
+
+function createContentElement(elementType, content, attribute) {
+    const element = document.createElement(elementType);
+    if (attribute === 'src') {
+        element.src = content;
+    } else {
+        element.textContent = content;
+    }
+    return element;
+}
+
+
 
 
 

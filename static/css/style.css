@@ -118,8 +118,8 @@ main {
     margin: 0 auto; /* Centers the paragraph */
     text-align: justify;
     text-justify: inter-word; /* Improves spacing between words */
-    padding-left: 23.1rem; /* Optional: adds some padding around the text */
-    padding-right: 23.1rem;
+    padding-left: 15rem; /* Optional: adds some padding around the text */
+    padding-right: 15rem;
     background: #fff; /* Optional: sets background color */
     border-radius: 5px; /* Optional: rounds the corners */
 }
@@ -146,8 +146,8 @@ footer {
     background-position: center;                                                    /* Center the background image */
     background-repeat: no-repeat;
     padding-top: 6rem;
-    padding-left: 23.1rem;
-    padding-right: 23.1rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
     min-height: 20rem;
     color: white;                                                                 /* Change text color for better visibility */
     position: relative;                                                             /* Ensure it stays in flow */
@@ -335,8 +335,8 @@ path.active {
     }
 
     .regular_text{
-        padding-left: 2rem; /* Optional: adds some padding around the text */
-        padding-right: 2rem;
+        padding-left: 1rem; /* Optional: adds some padding around the text */
+        padding-right: 1rem;
     }
 }
 
