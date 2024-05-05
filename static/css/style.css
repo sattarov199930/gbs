@@ -159,7 +159,7 @@ footer {
 /* --------------------------------- Page #1 -------------------------------- */
 .hero {
     height: 87vh;
-    background-image: url('../images/1.jpg'); /* Replace 'background.jpg' with your actual image path */
+    background-image: url('../images/1.JPEG'); /* Replace 'background.jpg' with your actual image path */
     background-size: cover;
     background-position: center;
     display: flex;
