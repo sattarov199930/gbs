@@ -49,6 +49,21 @@ const countryData = {
         title: "Tajikistan",
         description: "Information about Tajikistan.",
         imageUrl: "static/images/tj.png"
+    },
+    "UA": {
+        title: "Ukraine",
+        description: "Information about Ukraine.",
+        imageUrl: "static/images/ua.png"
+    },
+    "BY": {
+        title: "Belarus",
+        description: "Information about Belarus.",
+        imageUrl: "static/images/by.png"
+    },
+    "TM": {
+        title: "Turkmenistan",
+        description: "Information about Turkmenistan.",
+        imageUrl: "static/images/tm.png"
     }
 };
 
