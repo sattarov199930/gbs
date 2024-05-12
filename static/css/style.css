@@ -309,6 +309,7 @@ footer {
 #map-container {
     width: 100%;  /*Ensure the container is full-width */
     max-width: 100%;  /*Limit maximum width to avoid overflow*/ 
+    padding-top: 50px;
 } 
 
 #map-container object {
@@ -416,3 +417,89 @@ path.active {
         top: 0;
       }
 }
+
+/* --------------------------- Styling the footer --------------------------- */
+.footer-columns {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.footer-columns .column {
+    flex: 1; /* Each column takes equal width */
+    padding-left: 10px; /* Spacing inside each column */
+    padding-right: 10px;
+}
+
+.footer-columns .column.one {
+    text-align: center; /* Left aligns text in the left column */
+    padding-left: 20%;
+}
+
+.footer-columns .column.two {
+    text-align: center; /* Center aligns text in the center column */
+}
+
+.footer-columns .column.three {
+    text-align: center; /* Right aligns text in the right column */
+    padding-right: 20%;
+}
+
+.footer-columns .column:not(:last-child) {
+    border-right: 2px solid #5f5f5f; /* Optional border between columns */
+}
+
+@media (max-width: 600px) {
+    .footer-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-columns .column {
+        text-align: center; /* Centers text for all columns on small screens */
+        border-right: none;
+        margin-bottom: 10px;
+    }
+
+    .footer-columns .column.one {
+        text-align: center; /* Left aligns text in the left column */
+        padding-left: 0%;
+    }
+    
+    .footer-columns .column.two {
+        text-align: center; /* Center aligns text in the center column */
+    }
+    
+    .footer-columns .column.three {
+        text-align: center; /* Right aligns text in the right column */
+        padding-right: 0%;
+    }
+
+    .footer-columns .column:not(:last-child) {
+        border-right: 0px solid #5f5f5f00; /* Optional border between columns */
+        border-bottom: 2px solid #5f5f5f;
+        padding-bottom: 15px;
+    }
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px; /* Space above the copyright text */
+}
+
+footer p:last-child {
+    margin-bottom: 0; /* No extra space below the last paragraph in each column */
+}
+
+footer a {
+    color: inherit; /* Inherits the text color from the footer */
+    text-decoration: none; /* Initially removes the underline from the links */
+    transition: color 0.5s ease, text-decoration 0.5s ease, font-weight 0.5 ease; /* Smooth transition for color and text decoration */
+}
+
+footer a:hover {
+    color: #2b14ab; /* Changes text color to red on hover */
+    text-decoration: underline; /* Adds an underline on hover */
+    font-weight: bold; /* Makes text bold on hover */
+}
+
