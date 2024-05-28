@@ -1,0 +1,144 @@
+/* -------------------- Styling the next/previous buttons ------------------- */
+.article-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-right: 20rem;
+    margin-left: 20rem;
+    gap: 30rem;
+    align-items: center;
+}
+
+.article-navigation a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: gray;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    flex: 1; /* Ensure buttons take up equal space */
+    text-align: center;
+}
+
+.article-navigation a:hover {
+    background-color: orange;
+}
+
+.article-navigation a:visited {
+    color: white; /* Ensure visited links remain white */
+}
+
+.article-navigation .prev-link {
+    margin-right: auto; /* Push the previous link to the left */
+}
+
+.article-navigation .next-link {
+    margin-left: auto; /* Push the next link to the right */
+}
+
+/* ---------------------- Styling the cards themselves ---------------------- */
+.page3 {
+    background-color: #2b14ab08;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next row */
+    justify-content: center;
+    gap: 20px; /* Space between items */
+    max-width: 1200px; /* Adjust width as necessary */
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 calc(25% - 20px); /* 3 items per row */
+    max-width: calc(25% - 20px); /* Ensure a maximum width to keep 3 items per row */
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    margin: 10px;
+    min-height: 300px; /* Minimum height to maintain size consistency */
+}
+
+.box img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover; /* Ensures the image covers the area without being stretched */
+}
+
+.box p {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    object-fit: cover;
+}
+
+.box button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8d8d8d;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* Makes the button take the full width of the box */
+}
+
+.box header {
+    padding-top: 10px;
+}
+
+.box button:hover {
+    background-color: #2b14ab;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    padding: 10px;
+    text-align: justify;
+    text-justify: inter-word; /* Improves spacing between words */
+}
+
+/* Styling the Read More link */
+.box a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Set default color to white */
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+.box a:visited {
+    color: white; /* Ensure visited links remain white */
+}
+
+/* Media Queries for Responsive Layout */
+@media (max-width: 900px) {
+    .box {
+        flex: 1 1 calc(50% - 20px); /* 2 items per row */
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .box {
+        flex: 1 1 calc(100% - 20px); /* 1 item per row */
+        max-width: calc(100% - 20px);
+    }
+}

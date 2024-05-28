@@ -1,0 +1,24 @@
+<header>
+    <!-- SVG Logo -->
+    <div class="logo">
+        <a href="{{ "/" | relURL }}">
+            <img src="{{ "images/logo.svg" | relURL }}" alt="GBS Logo" style="height: 50px;">
+        </a>
+    </div>
+    <!-- Navigation menu -->
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+            {{range where .Site.RegularPages "Section" "menu"}}
+            <li class="menu-button" onclick="toggleSidebar()"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+            {{ end }}
+        </ul>
+        <ul>
+            {{range where .Site.RegularPages "Section" "menu"}}
+            <li class="hideOnMobile"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+            {{ end }}
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+</header>
+

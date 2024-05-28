@@ -1,0 +1,85 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.logo {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.logo, nav {
+    margin: 3px 3px; /* Adds margin to both sides of the logo and nav */
+}
+
+nav {
+    background-color: transparent; /* Makes the nav background transparent to inherit from header */
+    display: flex;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 10px;
+
+}
+
+nav ul li {
+    margin-left: 10px;
+}
+
+nav a {
+    padding: 10px 20px;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    color: #5f5f5f;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background-color: #2b14ab;
+    color: #fff;
+    border-radius: 5px; /* Ensures the rounded corners are always present */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for all properties */
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+.sidebar {
+    background-color: #fff; /* Solid background color */
+    width: 250px; /* Adjust as necessary */
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1050; /* Higher z-index to be on top */
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2); /* Adds a shadow for better visibility */
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%); /* Starts off-screen */
+}
+
+  .sidebar li{
+    width: 100%;
+  }
+  .sidebar a{
+    width: 100%;
+  }
+  .menu-button {
+    position: relative; /* If needed */
+    display: none; /* Ensures it appears where expected */
+    cursor: pointer;
+    z-index: 1050; /* Ensure it doesn't overlap modal inappropriately */
+}

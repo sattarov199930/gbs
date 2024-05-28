@@ -1,0 +1,68 @@
+{{ define "main" }}
+    <section>
+        <!-- ------------------------------ Hero Page ------------------------------ -->
+        <div class="hero">
+            <h1 id="company-name">Global Business Services</h1>
+            <p id="company-description">Professional high-quality services in engineering, management and development.</p>
+            <div id="additional-content">
+                <!-- <img src="static/images/5.jpeg" alt="Our Services" style="width:100%; max-width:400px;"> -->
+                <p>Learn more about our services and how we can help you achieve your goals.</p>
+            </div>
+        </div>
+
+        <!-- ------------------------ Content preview page ------------------------- -->
+        <div class="regular_text">
+            <p>
+                We strive to deliver innovative, inclusive, and sustainable solutions for our customers. Our experts have a particular prowess for detailed analysis of public and private sector institutions in elaborating recommendations for improvements.
+            </p>
+            <img src="{{ "images/5.JPG" | relURL }}" alt="Descriptive Text">
+        </div>
+
+        <div class="regular_text">
+            <img src="{{ "images/6.JPG" | relURL }}" alt="Descriptive Text">
+            <p>
+                We offer comprehensive solutions for substantive improvement in water utilities' financial and operational performance. What's more, GBS solutions have been field-tested and methodically improved within years of operations specialized in such services.
+            </p>
+        </div>
+
+        <div class="regular_text">
+            <p>
+                We support a wide range of local, regional, and international clients with Initial Environmental Examination (IEE), Environmental and Social Impact Assessment (ESIA), Environmental Management Plan (EMP), and Environmental and Social Management Plan (ESMP) services.
+            </p>
+            <img src="{{ "images/7.JPG" | relURL }}" alt="Descriptive Text">
+        </div>
+
+        <!-- ----------------------------- Info cards ------------------------------ -->
+        <div class="page3">
+            <div class="container">
+                {{ range where .Site.RegularPages "Section" "index_cards" }}
+                <div class="box">
+                    <img src="{{ .Params.image | relURL }}" alt="{{ .Title }} Image">
+                    <header><h3>{{ .Title }}</h3></header>
+                    <div class="content">
+                        <p>{{ .Params.description }}</p>
+                    </div>
+                        <a href="{{ .Permalink }}">
+                            <button>Read More</button>
+                        </a>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        
+        
+        <!-- ---------------------------- The world map ---------------------------- -->
+        <div id="map-container" class="worldmap">
+            <object id="svgMap" type="image/svg+xml" data="{{ "images/world.svg" | relURL }}">Please restart the page</object>
+        </div>
+        <!-- Modal for country info -->
+        <div id="infoModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="countryInfo"></p>
+            </div>
+        </div>
+
+    </section>
+{{ end }}
+
