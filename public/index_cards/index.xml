@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Index_cards on Global Business Services</title>
-    <link>/index_cards/</link>
+    <link>//localhost:1313/index_cards/</link>
     <description>Recent content in Index_cards on Global Business Services</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 24 May 2024 17:22:39 -0400</lastBuildDate>
-    <atom:link href="/index_cards/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/index_cards/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Water</title>
-      <link>/index_cards/water/</link>
+      <link>//localhost:1313/index_cards/water/</link>
       <pubDate>Fri, 24 May 2024 17:21:56 -0400</pubDate>
-      <guid>/index_cards/water/</guid>
+      <guid>//localhost:1313/index_cards/water/</guid>
       <description>This is the detailed content for the WATER page.</description>
     </item>
     <item>
       <title>Waste</title>
-      <link>/index_cards/waste/</link>
+      <link>//localhost:1313/index_cards/waste/</link>
       <pubDate>Fri, 24 May 2024 17:22:01 -0400</pubDate>
-      <guid>/index_cards/waste/</guid>
+      <guid>//localhost:1313/index_cards/waste/</guid>
       <description>Waste</description>
     </item>
     <item>
       <title>Power</title>
-      <link>/index_cards/power/</link>
+      <link>//localhost:1313/index_cards/power/</link>
       <pubDate>Fri, 24 May 2024 17:22:08 -0400</pubDate>
-      <guid>/index_cards/power/</guid>
+      <guid>//localhost:1313/index_cards/power/</guid>
       <description>Power</description>
     </item>
     <item>
       <title>Equipment</title>
-      <link>/index_cards/equipment/</link>
+      <link>//localhost:1313/index_cards/equipment/</link>
       <pubDate>Fri, 24 May 2024 17:22:16 -0400</pubDate>
-      <guid>/index_cards/equipment/</guid>
+      <guid>//localhost:1313/index_cards/equipment/</guid>
       <description>Equipment</description>
     </item>
     <item>
       <title>ECONOMIC &amp; SOCIAL STUDIES</title>
-      <link>/index_cards/econ/</link>
+      <link>//localhost:1313/index_cards/econ/</link>
       <pubDate>Fri, 24 May 2024 17:22:31 -0400</pubDate>
-      <guid>/index_cards/econ/</guid>
+      <guid>//localhost:1313/index_cards/econ/</guid>
       <description>Economic &amp;amp; Social Studies</description>
     </item>
     <item>
       <title>Environment</title>
-      <link>/index_cards/environment/</link>
+      <link>//localhost:1313/index_cards/environment/</link>
       <pubDate>Fri, 24 May 2024 17:22:39 -0400</pubDate>
-      <guid>/index_cards/environment/</guid>
+      <guid>//localhost:1313/index_cards/environment/</guid>
       <description>Environment</description>
     </item>
   </channel>
