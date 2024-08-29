@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Global Business Services</title>
-    <link>http://localhost:61722/categories.html</link>
+    <link>https://main.d36dldsqv2b7da.amplifyapp.com/categories.html</link>
     <description>Recent content in Categories on Global Business Services</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:61722/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://main.d36dldsqv2b7da.amplifyapp.com/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
