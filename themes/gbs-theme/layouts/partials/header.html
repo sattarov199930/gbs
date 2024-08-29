@@ -1,6 +1,8 @@
 <header>
     <!-- SVG Logo -->
     <div class="logo">
+        {{ $about := .Site.GetPage "menu/about.md" }}
+        <p><a href="{{ $about.Permalink }}">About Us</a></p>
         <a href="{{ "/" | relURL }}">
             <img src="{{ "images/logo.svg" | relURL }}" alt="GBS Logo" style="height: 50px;">
         </a>
