@@ -2,65 +2,65 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:60985/index_cards/water/</loc>
+    <loc>http://localhost:61559/index_cards/water/</loc>
     <lastmod>2024-05-24T17:21:56-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:60985/company/</loc>
+    <loc>http://localhost:61559/company/</loc>
     <lastmod>2024-05-18T20:42:52-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:60985/index_cards/waste/</loc>
+    <loc>http://localhost:61559/index_cards/waste/</loc>
     <lastmod>2024-05-24T17:22:01-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:60985/projects/</loc>
+    <loc>http://localhost:61559/projects/</loc>
     <lastmod>2024-05-18T20:43:13-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:60985/index_cards/power/</loc>
+    <loc>http://localhost:61559/index_cards/power/</loc>
     <lastmod>2024-05-24T17:22:08-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:60985/services/</loc>
+    <loc>http://localhost:61559/services/</loc>
     <lastmod>2024-05-18T20:43:05-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:60985/index_cards/equipment/</loc>
+    <loc>http://localhost:61559/index_cards/equipment/</loc>
     <lastmod>2024-05-24T17:22:16-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:60985/locations/</loc>
+    <loc>http://localhost:61559/locations/</loc>
     <lastmod>2024-05-18T20:43:31-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:60985/index_cards/econ/</loc>
+    <loc>http://localhost:61559/index_cards/econ/</loc>
     <lastmod>2024-05-24T17:22:31-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:60985/about/</loc>
+    <loc>http://localhost:61559/about/</loc>
     <lastmod>2024-05-18T20:44:03-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:60985/index_cards/environment/</loc>
+    <loc>http://localhost:61559/index_cards/environment/</loc>
     <lastmod>2024-05-24T17:22:39-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:60985/contact/</loc>
+    <loc>http://localhost:61559/contact/</loc>
     <lastmod>2024-05-18T20:44:09-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:60985/blog/</loc>
+    <loc>http://localhost:61559/blog/</loc>
     <lastmod>2024-05-24T17:18:40-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:60985/</loc>
+    <loc>http://localhost:61559/</loc>
     <lastmod>2024-05-24T21:04:30-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:60985/footer/</loc>
+    <loc>http://localhost:61559/footer/</loc>
     <lastmod>2024-05-24T21:04:30-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:60985/footer/positions/</loc>
+    <loc>http://localhost:61559/footer/positions/</loc>
     <lastmod>2024-05-24T21:04:30-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:60985/footer/socials/</loc>
+    <loc>http://localhost:61559/footer/socials/</loc>
     <lastmod>2024-05-24T21:04:18-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:60985/index_cards/</loc>
+    <loc>http://localhost:61559/index_cards/</loc>
     <lastmod>2024-05-24T17:22:39-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:60985/menu/</loc>
+    <loc>http://localhost:61559/menu/</loc>
     <lastmod>2024-05-24T17:18:40-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:60985/categories/</loc>
+    <loc>http://localhost:61559/categories/</loc>
   </url><url>
-    <loc>http://localhost:60985/tags/</loc>
+    <loc>http://localhost:61559/tags/</loc>
   </url>
 </urlset>

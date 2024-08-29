@@ -2,59 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Menus on </title>
-    <link>http://localhost:60985/menu/</link>
+    <link>http://localhost:61559/menu/</link>
     <description>Recent content in Menus on </description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 24 May 2024 17:18:40 -0400</lastBuildDate>
-    <atom:link href="http://localhost:60985/menu/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:61559/menu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Company</title>
-      <link>http://localhost:60985/company/</link>
+      <link>http://localhost:61559/company/</link>
       <pubDate>Sat, 18 May 2024 20:42:52 -0400</pubDate>
-      <guid>http://localhost:60985/company/</guid>
+      <guid>http://localhost:61559/company/</guid>
       <description>Infomation about the company</description>
     </item>
     <item>
       <title>Projects</title>
-      <link>http://localhost:60985/projects/</link>
+      <link>http://localhost:61559/projects/</link>
       <pubDate>Sat, 18 May 2024 20:43:13 -0400</pubDate>
-      <guid>http://localhost:60985/projects/</guid>
+      <guid>http://localhost:61559/projects/</guid>
       <description>Our projects</description>
     </item>
     <item>
-      <title>Services</title>
-      <link>http://localhost:60985/services/</link>
-      <pubDate>Sat, 18 May 2024 20:43:05 -0400</pubDate>
-      <guid>http://localhost:60985/services/</guid>
-      <description>Services that we provide</description>
-    </item>
-    <item>
       <title>Locations</title>
-      <link>http://localhost:60985/locations/</link>
+      <link>http://localhost:61559/locations/</link>
       <pubDate>Sat, 18 May 2024 20:43:31 -0400</pubDate>
-      <guid>http://localhost:60985/locations/</guid>
+      <guid>http://localhost:61559/locations/</guid>
       <description>Our locations</description>
     </item>
     <item>
       <title>About</title>
-      <link>http://localhost:60985/about/</link>
+      <link>http://localhost:61559/about/</link>
       <pubDate>Sat, 18 May 2024 20:44:03 -0400</pubDate>
-      <guid>http://localhost:60985/about/</guid>
+      <guid>http://localhost:61559/about/</guid>
       <description>About Global Business Services and services that can be provided</description>
     </item>
     <item>
       <title>Contact</title>
-      <link>http://localhost:60985/contact/</link>
+      <link>http://localhost:61559/contact/</link>
       <pubDate>Sat, 18 May 2024 20:44:09 -0400</pubDate>
-      <guid>http://localhost:60985/contact/</guid>
+      <guid>http://localhost:61559/contact/</guid>
       <description>Our contact information</description>
     </item>
     <item>
       <title>Blog</title>
-      <link>http://localhost:60985/blog/</link>
+      <link>http://localhost:61559/blog/</link>
       <pubDate>Fri, 24 May 2024 17:18:40 -0400</pubDate>
-      <guid>http://localhost:60985/blog/</guid>
+      <guid>http://localhost:61559/blog/</guid>
       <description>Global Business Services Blog</description>
     </item>
   </channel>
