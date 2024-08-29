@@ -1,7 +1,34 @@
-baseURL = '/'
+baseURL = 'https://main.d36dldsqv2b7da.amplifyapp.com/'
+
+# Environment-specific configuration
+[params]
+  environment = "development"  # Default to development
+
+# Development environment settings
+[params.development]
+  baseURL = "http://localhost:1313/"
+  relativeURLs = true
+  uglyURLs = true  # Optional: If you want URLs like /about.html instead of /about/
+
+# Production environment settings
+[params.production]
+  baseURL = "https://main.d36dldsqv2b7da.amplifyapp.com/"
+  relativeURLs = false
+  uglyURLs = false
+
+
 languageCode = 'en-us'
 title = 'Global Business Services'
 theme = 'gbs-theme'
+
+# This will conditionally set the baseURL based on the environment
+[outputs]
+  home = [ "HTML", "HTML" ]
+
+# Environment switch logic
+[outputFormats]
+  [outputFormats.HTML]
+    baseURL = "https://www.example.com/"
 
 [permalinks]
 menu = "/:slug/"
