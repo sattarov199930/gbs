@@ -12,24 +12,10 @@
             {{range where .Site.RegularPages "Section" "menu"}}
             <li class="menu-button" onclick="toggleSidebar()"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
             {{ end }}
-
-            {{ $services := .Site.GetPage "services.md" }}
-            {{ if $services }}
-                <a href="{{ $services.Permalink }}">Services</a>
-            {{ else }}
-                <p>Services page not found</p>
-            {{ end }}
         </ul>
         <ul>
             {{range where .Site.RegularPages "Section" "menu"}}
             <li class="hideOnMobile"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-            {{ end }}
-
-            {{ $services := .Site.GetPage "services.md" }}
-            {{ if $services }}
-                <a href="{{ $services.Permalink }}">Services</a>
-            {{ else }}
-                <p>Services page not found</p>
             {{ end }}
             <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
         </ul>
