@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Menus on </title>
-    <link>http://localhost:1313/menu/</link>
+    <link>https://main.d36dldsqv2b7da.amplifyapp.com/menu/</link>
     <description>Recent content in Menus on </description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 24 May 2024 17:18:40 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/menu/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://main.d36dldsqv2b7da.amplifyapp.com/menu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Company</title>
-      <link>http://localhost:1313/company/</link>
+      <link>https://main.d36dldsqv2b7da.amplifyapp.com/company/</link>
       <pubDate>Sat, 18 May 2024 20:42:52 -0400</pubDate>
-      <guid>http://localhost:1313/company/</guid>
+      <guid>https://main.d36dldsqv2b7da.amplifyapp.com/company/</guid>
       <description>Infomation about the company</description>
     </item>
     <item>
       <title>Projects</title>
-      <link>http://localhost:1313/projects/</link>
+      <link>https://main.d36dldsqv2b7da.amplifyapp.com/projects/</link>
       <pubDate>Sat, 18 May 2024 20:43:13 -0400</pubDate>
-      <guid>http://localhost:1313/projects/</guid>
+      <guid>https://main.d36dldsqv2b7da.amplifyapp.com/projects/</guid>
       <description>Our projects</description>
     </item>
     <item>
       <title>Services</title>
-      <link>http://localhost:1313/services/</link>
+      <link>https://main.d36dldsqv2b7da.amplifyapp.com/services/</link>
       <pubDate>Sat, 18 May 2024 20:43:05 -0400</pubDate>
-      <guid>http://localhost:1313/services/</guid>
+      <guid>https://main.d36dldsqv2b7da.amplifyapp.com/services/</guid>
       <description>Services that we provide</description>
     </item>
     <item>
       <title>Locations</title>
-      <link>http://localhost:1313/locations/</link>
+      <link>https://main.d36dldsqv2b7da.amplifyapp.com/locations/</link>
       <pubDate>Sat, 18 May 2024 20:43:31 -0400</pubDate>
-      <guid>http://localhost:1313/locations/</guid>
+      <guid>https://main.d36dldsqv2b7da.amplifyapp.com/locations/</guid>
       <description>Our locations</description>
     </item>
     <item>
       <title>About</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://main.d36dldsqv2b7da.amplifyapp.com/about/</link>
       <pubDate>Sat, 18 May 2024 20:44:03 -0400</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>https://main.d36dldsqv2b7da.amplifyapp.com/about/</guid>
       <description>About Global Business Services and services that can be provided</description>
     </item>
     <item>
       <title>Contact</title>
-      <link>http://localhost:1313/contact/</link>
+      <link>https://main.d36dldsqv2b7da.amplifyapp.com/contact/</link>
       <pubDate>Sat, 18 May 2024 20:44:09 -0400</pubDate>
-      <guid>http://localhost:1313/contact/</guid>
+      <guid>https://main.d36dldsqv2b7da.amplifyapp.com/contact/</guid>
       <description>Our contact information</description>
     </item>
     <item>
       <title>Blog</title>
-      <link>http://localhost:1313/blog/</link>
+      <link>https://main.d36dldsqv2b7da.amplifyapp.com/blog/</link>
       <pubDate>Fri, 24 May 2024 17:18:40 -0400</pubDate>
-      <guid>http://localhost:1313/blog/</guid>
+      <guid>https://main.d36dldsqv2b7da.amplifyapp.com/blog/</guid>
       <description>Global Business Services Blog</description>
     </item>
   </channel>

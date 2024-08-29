@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Index_cards on </title>
-    <link>http://localhost:1313/index_cards/</link>
+    <link>https://main.d36dldsqv2b7da.amplifyapp.com/index_cards/</link>
     <description>Recent content in Index_cards on </description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 24 May 2024 17:22:39 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/index_cards/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://main.d36dldsqv2b7da.amplifyapp.com/index_cards/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Water</title>
-      <link>http://localhost:1313/index_cards/water/</link>
+      <link>https://main.d36dldsqv2b7da.amplifyapp.com/index_cards/water/</link>
       <pubDate>Fri, 24 May 2024 17:21:56 -0400</pubDate>
-      <guid>http://localhost:1313/index_cards/water/</guid>
+      <guid>https://main.d36dldsqv2b7da.amplifyapp.com/index_cards/water/</guid>
       <description>This is the detailed content for the WATER page.</description>
     </item>
     <item>
       <title>Waste</title>
-      <link>http://localhost:1313/index_cards/waste/</link>
+      <link>https://main.d36dldsqv2b7da.amplifyapp.com/index_cards/waste/</link>
       <pubDate>Fri, 24 May 2024 17:22:01 -0400</pubDate>
-      <guid>http://localhost:1313/index_cards/waste/</guid>
+      <guid>https://main.d36dldsqv2b7da.amplifyapp.com/index_cards/waste/</guid>
       <description>Waste</description>
     </item>
     <item>
       <title>Power</title>
-      <link>http://localhost:1313/index_cards/power/</link>
+      <link>https://main.d36dldsqv2b7da.amplifyapp.com/index_cards/power/</link>
       <pubDate>Fri, 24 May 2024 17:22:08 -0400</pubDate>
-      <guid>http://localhost:1313/index_cards/power/</guid>
+      <guid>https://main.d36dldsqv2b7da.amplifyapp.com/index_cards/power/</guid>
       <description>Power</description>
     </item>
     <item>
       <title>Equipment</title>
-      <link>http://localhost:1313/index_cards/equipment/</link>
+      <link>https://main.d36dldsqv2b7da.amplifyapp.com/index_cards/equipment/</link>
       <pubDate>Fri, 24 May 2024 17:22:16 -0400</pubDate>
-      <guid>http://localhost:1313/index_cards/equipment/</guid>
+      <guid>https://main.d36dldsqv2b7da.amplifyapp.com/index_cards/equipment/</guid>
       <description>Equipment</description>
     </item>
     <item>
       <title>ECONOMIC &amp; SOCIAL STUDIES</title>
-      <link>http://localhost:1313/index_cards/econ/</link>
+      <link>https://main.d36dldsqv2b7da.amplifyapp.com/index_cards/econ/</link>
       <pubDate>Fri, 24 May 2024 17:22:31 -0400</pubDate>
-      <guid>http://localhost:1313/index_cards/econ/</guid>
+      <guid>https://main.d36dldsqv2b7da.amplifyapp.com/index_cards/econ/</guid>
       <description>Economic &amp;amp; Social Studies</description>
     </item>
     <item>
       <title>Environment</title>
-      <link>http://localhost:1313/index_cards/environment/</link>
+      <link>https://main.d36dldsqv2b7da.amplifyapp.com/index_cards/environment/</link>
       <pubDate>Fri, 24 May 2024 17:22:39 -0400</pubDate>
-      <guid>http://localhost:1313/index_cards/environment/</guid>
+      <guid>https://main.d36dldsqv2b7da.amplifyapp.com/index_cards/environment/</guid>
       <description>Environment</description>
     </item>
   </channel>
