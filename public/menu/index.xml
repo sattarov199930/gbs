@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Menus on Global Business Services</title>
-    <link>http://localhost:59632/menu/</link>
+    <link>https://main.d36dldsqv2b7da.amplifyapp.com/menu.html</link>
     <description>Recent content in Menus on Global Business Services</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 24 May 2024 17:18:40 -0400</lastBuildDate>
-    <atom:link href="http://localhost:59632/menu/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://main.d36dldsqv2b7da.amplifyapp.com/menu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Company</title>
-      <link>http://localhost:59632/menu/company/</link>
+      <link>https://main.d36dldsqv2b7da.amplifyapp.com/menu/company.html</link>
       <pubDate>Sat, 18 May 2024 20:42:52 -0400</pubDate>
-      <guid>http://localhost:59632/menu/company/</guid>
+      <guid>https://main.d36dldsqv2b7da.amplifyapp.com/menu/company.html</guid>
       <description>Infomation about the company</description>
     </item>
     <item>
       <title>Projects</title>
-      <link>http://localhost:59632/menu/projects/</link>
+      <link>https://main.d36dldsqv2b7da.amplifyapp.com/menu/projects.html</link>
       <pubDate>Sat, 18 May 2024 20:43:13 -0400</pubDate>
-      <guid>http://localhost:59632/menu/projects/</guid>
+      <guid>https://main.d36dldsqv2b7da.amplifyapp.com/menu/projects.html</guid>
       <description>Our projects</description>
     </item>
     <item>
       <title>Services</title>
-      <link>http://localhost:59632/menu/services/</link>
+      <link>https://main.d36dldsqv2b7da.amplifyapp.com/menu/services.html</link>
       <pubDate>Sat, 18 May 2024 20:43:05 -0400</pubDate>
-      <guid>http://localhost:59632/menu/services/</guid>
+      <guid>https://main.d36dldsqv2b7da.amplifyapp.com/menu/services.html</guid>
       <description>Services that we provide</description>
     </item>
     <item>
       <title>Locations</title>
-      <link>http://localhost:59632/menu/locations/</link>
+      <link>https://main.d36dldsqv2b7da.amplifyapp.com/menu/locations.html</link>
       <pubDate>Sat, 18 May 2024 20:43:31 -0400</pubDate>
-      <guid>http://localhost:59632/menu/locations/</guid>
+      <guid>https://main.d36dldsqv2b7da.amplifyapp.com/menu/locations.html</guid>
       <description>Our locations</description>
     </item>
     <item>
       <title>About</title>
-      <link>http://localhost:59632/menu/about/</link>
+      <link>https://main.d36dldsqv2b7da.amplifyapp.com/menu/about.html</link>
       <pubDate>Sat, 18 May 2024 20:44:03 -0400</pubDate>
-      <guid>http://localhost:59632/menu/about/</guid>
+      <guid>https://main.d36dldsqv2b7da.amplifyapp.com/menu/about.html</guid>
       <description>About Global Business Services and services that can be provided</description>
     </item>
     <item>
       <title>Contact</title>
-      <link>http://localhost:59632/menu/contact/</link>
+      <link>https://main.d36dldsqv2b7da.amplifyapp.com/menu/contact.html</link>
       <pubDate>Sat, 18 May 2024 20:44:09 -0400</pubDate>
-      <guid>http://localhost:59632/menu/contact/</guid>
+      <guid>https://main.d36dldsqv2b7da.amplifyapp.com/menu/contact.html</guid>
       <description>Our contact information</description>
     </item>
     <item>
       <title>Blog</title>
-      <link>http://localhost:59632/menu/blog/</link>
+      <link>https://main.d36dldsqv2b7da.amplifyapp.com/menu/blog.html</link>
       <pubDate>Fri, 24 May 2024 17:18:40 -0400</pubDate>
-      <guid>http://localhost:59632/menu/blog/</guid>
+      <guid>https://main.d36dldsqv2b7da.amplifyapp.com/menu/blog.html</guid>
       <description>Global Business Services Blog</description>
     </item>
   </channel>
