@@ -133,9 +133,8 @@ footer {
 /* ----------------- Set-ups for Larger and Smaller Screens ----------------- */
 /* -------------------------------------------------------------------------- */
 
-
 /* Smaller screens */
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
     .home-banner {
         padding-top: 8rem;
         padding-left: 1rem;
@@ -150,10 +149,15 @@ footer {
         display: block;
     }
 
+    .sidebar {
+        transform: translateX(100%); /* Keep the sidebar hidden initially */
+    }
+
     .regular_text{
         padding-left: 1rem; /* Optional: adds some padding around the text */
         padding-right: 1rem;
     }
+
 }
 
 /* Very small screens: minimum padding */
@@ -163,10 +167,18 @@ footer {
         padding-left: 10px;
         padding-right: 10px;
     }
+    .hideOnMobile{
+        display: none;
+    }
+
+    .menu-button{
+        display: block;
+    }
 
     .sidebar{
         width: 100%;
         top: 0;
+        transform: translateX(100%); /* Keep the sidebar hidden initially */
       }
 }
 

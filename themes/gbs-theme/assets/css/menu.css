@@ -27,14 +27,17 @@ nav ul {
     justify-content: flex-end;
     align-items: center;
     margin-left: 10px;
+    text-align: left;
 
 }
 
 nav ul li {
     margin-left: 10px;
+    padding: 10px;
 }
 
 nav a {
+    text-align: left;
     padding: 10px 20px;
     text-decoration: none;
     align-items: center;
@@ -69,17 +72,35 @@ nav li:first-child{
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2); /* Adds a shadow for better visibility */
     transition: transform 0.3s ease-in-out;
     transform: translateX(100%); /* Starts off-screen */
-}
+    }
 
-  .sidebar li{
+.sidebar li{
     width: 100%;
   }
-  .sidebar a{
+.sidebar a{
     width: 100%;
   }
-  .menu-button {
-    position: relative; /* If needed */
-    display: none; /* Ensures it appears where expected */
+.menu-button {
+    display:    none; /* Hide by default */
+    position: relative;
+    top: 10px; /* Adjust this value as needed to position it vertically */
+    right: 10px; /* Adjust this value as needed to position it horizontally */
+    z-index: 1050; /* Ensure it stays on top of other elements */
     cursor: pointer;
-    z-index: 1050; /* Ensure it doesn't overlap modal inappropriately */
+    }
+
+@media (max-width: 1000px) {
+    .menu-button{
+        display: block;
+        color: black;
+        z-index: 0;
+    }
+
+    .sidebar {
+        transform: translateX(100%); /* Keep the sidebar hidden initially */
+    }
+
+    
+
+    
 }

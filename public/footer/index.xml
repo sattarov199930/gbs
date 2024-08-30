@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Footers on Global Business Services</title>
-    <link>/footer/</link>
+    <link>//localhost:51298/footer/</link>
     <description>Recent content in Footers on Global Business Services</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 24 May 2024 21:04:30 -0400</lastBuildDate>
-    <atom:link href="/footer/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:51298/footer/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Positions</title>
-      <link>/footer/positions/</link>
+      <link>//localhost:51298/footer/positions/</link>
       <pubDate>Fri, 24 May 2024 21:04:30 -0400</pubDate>
-      <guid>/footer/positions/</guid>
+      <guid>//localhost:51298/footer/positions/</guid>
       <description></description>
     </item>
     <item>
       <title>Socials</title>
-      <link>/footer/socials/</link>
+      <link>//localhost:51298/footer/socials/</link>
       <pubDate>Fri, 24 May 2024 21:04:18 -0400</pubDate>
-      <guid>/footer/socials/</guid>
+      <guid>//localhost:51298/footer/socials/</guid>
       <description></description>
     </item>
   </channel>
