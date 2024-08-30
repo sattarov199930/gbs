@@ -1,6 +1,8 @@
 baseURL = '/'
 languageCode = 'en-us'
 title = 'Global Business Services'
+canonifyURLs = true
+
 
 [[menus.main]]
 name = 'Home'

@@ -2,6 +2,8 @@ baseURL = '/'
 languageCode = 'en-us'
 title = 'Global Business Services'
 theme = 'gbs-theme'
+canonifyURLs = true
+
 
 [permalinks]
 menu = "/:slug/"
