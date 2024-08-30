@@ -1,8 +1,7 @@
-baseURL = "https://main.d36dldsqv2b7da.amplifyapp.com"
+baseURL = '/'
 languageCode = 'en-us'
 title = 'Global Business Services'
 theme = 'gbs-theme'
 
-
-
-
+[permalinks]
+menu = "/:slug/"
