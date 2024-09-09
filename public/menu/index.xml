@@ -27,7 +27,7 @@
       <link>//localhost:1313/services/</link>
       <pubDate>Sat, 18 May 2024 20:43:05 -0400</pubDate>
       <guid>//localhost:1313/services/</guid>
-      <description>Services that we provide</description>
+      <description>PROJECT MANAGEMENT AND SUPERVISION CONSULTING GBS is experienced in project management support, including assisting with tendering, evaluation, and contract award to the successful Bidder, issuing the necessary progress reports, and improving the Client&amp;rsquo;s project management capacity. GBS is also responsible for the financial management of project-related activities during project implementation, including establishing a management information system, assisting in accounting, issuing payment certificates, etc. GBS ensures that the project is satisfactorily delivered on schedule to the required standards and within budget.</description>
     </item>
     <item>
       <title>Locations</title>
@@ -35,6 +35,13 @@
       <pubDate>Sat, 18 May 2024 20:43:31 -0400</pubDate>
       <guid>//localhost:1313/locations/</guid>
       <description>Our locations</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>//localhost:1313/about/</link>
+      <pubDate>Sat, 18 May 2024 20:44:03 -0400</pubDate>
+      <guid>//localhost:1313/about/</guid>
+      <description>Since 2002, GBS has been providing professional consulting services in various economic and social fields, including water supply and sanitation, solid waste management, urban infrastructure, agriculture and natural resources management, health management, and other sectors.&#xA;GBS provides high-quality services throughout the project management cycle, from project identification and development to implementation, monitoring, and evaluation. GBS strives to deliver innovative, inclusive, and sustainable solutions for its customers. GBS establishes long-term and successful client partnerships based on trust, respect, professionalism, and goal commitment.</description>
     </item>
     <item>
       <title>Contact</title>
@@ -49,13 +56,6 @@
       <pubDate>Fri, 24 May 2024 17:18:40 -0400</pubDate>
       <guid>//localhost:1313/blog/</guid>
       <description>Global Business Services Blog</description>
-    </item>
-    <item>
-      <title></title>
-      <link>//localhost:1313/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/</guid>
-      <description>f+++ title = &amp;lsquo;About&amp;rsquo; date = 2024-05-18T20:44:03-04:00 weight = &amp;lsquo;5&amp;rsquo; +++&#xA;Since 2002, GBS has been providing professional consulting services in various economic and social fields, including water supply and sanitation, solid waste management, urban infrastructure, agriculture and natural resources management, health management, and other sectors. GBS provides high-quality services throughout the project management cycle, from project identification and development to implementation, monitoring, and evaluation. GBS strives to deliver innovative, inclusive, and sustainable solutions for its customers.</description>
     </item>
   </channel>
 </rss>

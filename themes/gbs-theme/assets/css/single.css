@@ -13,8 +13,29 @@
 
 /* Make all list items blue and add left margin for indentation */
 .singles li {
-    color: blue; /* Change color of list items to blue */
+    /*color: blue;  Change color of list items to blue */
     margin-left: 30px; /* Add margin to the left for indentation */
+}
+
+/* ----------------------- Add a top margin to titles ----------------------- */
+.singles h4 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+
+
+.singles a {
+    text-align: left;
+    text-decoration: none;
+    color: #5f5f5f;
+}
+
+/* Hover state */
+.singles a:hover {
+    color: orange; /* Change color when hovering */
+    text-decoration: underline; /* Optional: add underline on hover */
+    font-weight: 700;
 }
 
 /* Add padding between paragraphs */
