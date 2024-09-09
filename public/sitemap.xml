@@ -2,87 +2,86 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:51298/index_cards/water/</loc>
+    <loc>//localhost:1313/index_cards/water/</loc>
     <lastmod>2024-05-24T17:21:56-04:00</lastmod>
   </url><url>
-    <loc>//localhost:51298/company/</loc>
+    <loc>//localhost:1313/company/</loc>
     <lastmod>2024-05-18T20:42:52-04:00</lastmod>
   </url><url>
-    <loc>//localhost:51298/index_cards/waste/</loc>
+    <loc>//localhost:1313/index_cards/waste/</loc>
     <lastmod>2024-05-24T17:22:01-04:00</lastmod>
   </url><url>
-    <loc>//localhost:51298/projects/</loc>
+    <loc>//localhost:1313/projects/</loc>
     <lastmod>2024-05-18T20:43:13-04:00</lastmod>
   </url><url>
-    <loc>//localhost:51298/index_cards/power/</loc>
+    <loc>//localhost:1313/index_cards/power/</loc>
     <lastmod>2024-05-24T17:22:08-04:00</lastmod>
   </url><url>
-    <loc>//localhost:51298/services/</loc>
+    <loc>//localhost:1313/services/</loc>
     <lastmod>2024-05-18T20:43:05-04:00</lastmod>
   </url><url>
-    <loc>//localhost:51298/index_cards/equipment/</loc>
+    <loc>//localhost:1313/index_cards/equipment/</loc>
     <lastmod>2024-05-24T17:22:16-04:00</lastmod>
   </url><url>
-    <loc>//localhost:51298/locations/</loc>
+    <loc>//localhost:1313/locations/</loc>
     <lastmod>2024-05-18T20:43:31-04:00</lastmod>
   </url><url>
-    <loc>//localhost:51298/index_cards/econ/</loc>
+    <loc>//localhost:1313/index_cards/econ/</loc>
     <lastmod>2024-05-24T17:22:31-04:00</lastmod>
   </url><url>
-    <loc>//localhost:51298/about/</loc>
-    <lastmod>2024-05-18T20:44:03-04:00</lastmod>
-  </url><url>
-    <loc>//localhost:51298/index_cards/environment/</loc>
+    <loc>//localhost:1313/index_cards/environment/</loc>
     <lastmod>2024-05-24T17:22:39-04:00</lastmod>
   </url><url>
-    <loc>//localhost:51298/contact/</loc>
+    <loc>//localhost:1313/contact/</loc>
     <lastmod>2024-05-18T20:44:09-04:00</lastmod>
   </url><url>
-    <loc>//localhost:51298/blog/</loc>
+    <loc>//localhost:1313/blog/</loc>
     <lastmod>2024-05-24T17:18:40-04:00</lastmod>
   </url><url>
-    <loc>//localhost:51298/footer/</loc>
+    <loc>//localhost:1313/footer/</loc>
     <lastmod>2024-05-24T21:04:30-04:00</lastmod>
   </url><url>
-    <loc>//localhost:51298/footer/positions/</loc>
+    <loc>//localhost:1313/footer/positions/</loc>
     <lastmod>2024-05-24T21:04:30-04:00</lastmod>
   </url><url>
-    <loc>//localhost:51298/footer/socials/</loc>
+    <loc>//localhost:1313/footer/socials/</loc>
     <lastmod>2024-05-24T21:04:18-04:00</lastmod>
   </url><url>
-    <loc>//localhost:51298/index_cards/</loc>
+    <loc>//localhost:1313/index_cards/</loc>
     <lastmod>2024-05-24T17:22:39-04:00</lastmod>
   </url><url>
-    <loc>//localhost:51298/menu/</loc>
+    <loc>//localhost:1313/menu/</loc>
     <lastmod>2024-05-24T17:18:40-04:00</lastmod>
   </url><url>
-    <loc>//localhost:51298/tags/blue/</loc>
+    <loc>//localhost:1313/tags/blue/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
   </url><url>
-    <loc>//localhost:51298/tags/green/</loc>
+    <loc>//localhost:1313/tags/green/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
   </url><url>
-    <loc>//localhost:51298/posts/post-3/</loc>
+    <loc>//localhost:1313/posts/post-3/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
   </url><url>
-    <loc>//localhost:51298/tags/red/</loc>
+    <loc>//localhost:1313/tags/red/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
   </url><url>
-    <loc>//localhost:51298/tags/</loc>
+    <loc>//localhost:1313/tags/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
   </url><url>
-    <loc>//localhost:51298/posts/post-2/</loc>
+    <loc>//localhost:1313/posts/post-2/</loc>
     <lastmod>2023-02-15T10:00:00-07:00</lastmod>
   </url><url>
-    <loc>//localhost:51298/posts/post-1/</loc>
+    <loc>//localhost:1313/posts/post-1/</loc>
     <lastmod>2023-01-15T09:00:00-07:00</lastmod>
   </url><url>
-    <loc>//localhost:51298/posts/</loc>
+    <loc>//localhost:1313/posts/</loc>
     <lastmod>2023-01-01T08:30:00-07:00</lastmod>
   </url><url>
-    <loc>//localhost:51298/</loc>
+    <loc>//localhost:1313/</loc>
     <lastmod>2023-01-01T08:00:00-07:00</lastmod>
   </url><url>
-    <loc>//localhost:51298/categories/</loc>
+    <loc>//localhost:1313/</loc>
+  </url><url>
+    <loc>//localhost:1313/categories/</loc>
   </url>
 </urlset>

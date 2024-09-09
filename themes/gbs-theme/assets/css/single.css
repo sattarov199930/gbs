@@ -1,0 +1,32 @@
+/* Set width to 60% of the screen and justify text */
+.singles {
+    width: 60%;
+    margin: 0 auto; /* Center the content horizontally */
+    text-align: justify; /* Justify the text */
+}
+
+/* Make all bold and italic items blue */
+.singles b, .singles strong,
+.singles em, .singles i {
+    color: blue; /* Change color of bold and italic text to blue */
+}
+
+/* Make all list items blue and add left margin for indentation */
+.singles li {
+    color: blue; /* Change color of list items to blue */
+    margin-left: 30px; /* Add margin to the left for indentation */
+}
+
+/* Add padding between paragraphs */
+.singles p {
+    margin-bottom: 20px; /* Adjust this value for more or less space */
+}
+
+/* Center all images and set a uniform size */
+.singles img {
+    display: block; /* Make image a block-level element */
+    margin: 0 auto; /* Center image horizontally */
+    width: 100%; /* Set image width relative to parent container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 400px; /* Maximum image width */
+}

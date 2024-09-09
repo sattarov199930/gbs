@@ -21,6 +21,10 @@
     {{ $style_menu := resources.Get "css/menu.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style_menu.Permalink }}">
 
+    <!-- ----------------- Importing CSS for the single pages ------------------ -->
+    {{ $style := resources.Get "css/single.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+
     <link rel="apple-touch-icon" sizes="180x180" href="{{ "images/favricon/apple-touch-icon.png" | relURL }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ "images/favricon/favicon-32x32.png" | relURL }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ "images/favricon/favicon-16x16.png" | relURL }}">
