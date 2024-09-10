@@ -7,3 +7,8 @@ canonifyURLs = true
 
 [permalinks]
 menu = "/:slug/"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

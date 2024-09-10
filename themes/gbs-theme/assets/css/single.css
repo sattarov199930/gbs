@@ -43,11 +43,9 @@
     margin-bottom: 20px; /* Adjust this value for more or less space */
 }
 
-/* Center all images and set a uniform size */
-.singles img {
-    display: block; /* Make image a block-level element */
-    margin: 0 auto; /* Center image horizontally */
-    width: 100%; /* Set image width relative to parent container */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 400px; /* Maximum image width */
+.flag-icon {
+    width: 1em; /* Set the width to match the font size */
+    height: auto; /* Maintain the aspect ratio */
+    vertical-align: middle; /* Align the icon with the text */
+    margin-right: 0.5em; /* Add some space between the flag and the country name */
 }
