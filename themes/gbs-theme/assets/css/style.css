@@ -40,6 +40,15 @@ main {
     align-items: center;
 }
 
+@media (max-width: 1200px){
+    .regular_text{
+        padding-left: 1rem; /* Optional: adds some padding around the text */
+        padding-right: 1rem;
+        display: block;
+        text-align: center;
+    }
+}
+
 .regular_text p {
     flex: 1; /* Allows the text to fill the available space */
     margin-right: 20px; /* Adds some space between the text and the image */
@@ -134,7 +143,7 @@ footer {
 /* -------------------------------------------------------------------------- */
 
 /* Smaller screens */
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
     .home-banner {
         padding-top: 8rem;
         padding-left: 1rem;
@@ -150,12 +159,9 @@ footer {
     }
 
     .sidebar {
+        width: 100%;
+        top: 0;
         transform: translateX(100%); /* Keep the sidebar hidden initially */
-    }
-
-    .regular_text{
-        padding-left: 1rem; /* Optional: adds some padding around the text */
-        padding-right: 1rem;
     }
 
 }

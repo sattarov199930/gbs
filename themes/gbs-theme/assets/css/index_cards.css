@@ -129,14 +129,7 @@
 }
 
 /* Media Queries for Responsive Layout */
-@media (max-width: 900px) {
-    .box {
-        flex: 1 1 calc(50% - 20px); /* 2 items per row */
-        max-width: calc(50% - 20px);
-    }
-}
-
-@media (max-width: 600px) {
+@media (max-width: 850px) {
     .box {
         flex: 1 1 calc(100% - 20px); /* 1 item per row */
         max-width: calc(100% - 20px);

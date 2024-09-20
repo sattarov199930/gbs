@@ -89,7 +89,7 @@ nav li:first-child{
     cursor: pointer;
     }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
     .menu-button{
         display: block;
         color: black;
