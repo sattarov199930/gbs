@@ -21,7 +21,6 @@ body {
 
 /* -------------------------------- Main Body ------------------------------- */
 main {
-    margin: 20px auto;
     text-align: center;
 }
 
@@ -101,6 +100,7 @@ footer {
     text-align: center;
     position: relative;
 }
+
 
 #company-name {
     font-size: 4em;

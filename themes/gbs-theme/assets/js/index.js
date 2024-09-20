@@ -1,9 +1,13 @@
 function toggleSidebar() {
     const sidebar = document.querySelector('.sidebar');
+    const menuButton = document.querySelector('.menu-button svg');
+    
     if (sidebar.style.transform === 'translateX(0%)') {
         sidebar.style.transform = 'translateX(100%)'; // Closes the sidebar
+        menuButton.innerHTML = `<path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>`; // Transform back to hamburger icon
     } else {
         sidebar.style.transform = 'translateX(0%)'; // Opens the sidebar
+        menuButton.innerHTML = `<path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/>`; // Transform to cross icon
     }
 }
 
@@ -16,6 +20,7 @@ function hideSidebar() {
     const sidebar = document.querySelector('.sidebar');
     sidebar.style.transform = 'translateX(100%)'; // Closes the sidebar
 }
+
 
 /* ------------------------------ The word map ------------------------------ */
 // 'US', 'UZ', 'LV', 'KZ', 'KG', 'TJ'
