@@ -103,7 +103,7 @@ nav {
 }
 
 /* Show the menu button on smaller screens */
-@media (max-width: 1200px) {
+@media (max-width: 850px) {
     .main-menu {
         display: none; /* Hide the main menu on smaller devices */
     }
