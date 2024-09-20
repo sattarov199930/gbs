@@ -114,7 +114,7 @@ footer {
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
     max-width: 80%;
     opacity: 0; /* Start invisible */
-    transition: opacity 2s ease-out 2s; /* Delayed transition */
+    transition: opacity 0.5s ease-out 0.5s; /* Delayed transition */
 }
 
 #additional-content {
@@ -126,7 +126,7 @@ footer {
     transition: transform 2s ease-out; /* Smooth slide-in effect */
     opacity: 0; /* Start invisible */
     margin-top: 20px;
-    margin-left: 300px;
+    margin-left: 15vw;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
 }
 
