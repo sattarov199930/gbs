@@ -2,7 +2,7 @@
 .article-navigation {
     display: flex;
     justify-content: space-between; /* Pushes the buttons to opposite ends */
-    margin-top: 20px;
+    margin: 15px;
     padding-right: 5vw;
     padding-left: 5vw;
     align-items: center;
@@ -59,13 +59,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     flex: 1 1 calc(25% - 20px); /* 3 items per row */
     max-width: calc(25% - 20px); /* Ensure a maximum width to keep 3 items per row */
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 15px;
-    text-align: center;
     margin: 10px;
     min-height: 300px; /* Minimum height to maintain size consistency */
 }
@@ -80,28 +80,23 @@
 .box p {
     width: 100%;
     height: auto;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    border-radius: 8px;
     object-fit: cover;
 }
 
-.box button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #8d8d8d;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    width: 100%; /* Makes the button take the full width of the box */
-}
-
 .box header {
-    padding-top: 10px;
+    width: 100%; /* Ensure the header takes the full width of the box */
+    text-align: center; /* Center the header text */
+    display: flex;
+    justify-content: center; /* Ensure that the header content is centered */
 }
-
-.box button:hover {
-    background-color: #2b14ab;
+.box header h3 {
+    text-align: center; /* Align the header text to the center */
+    text-transform: uppercase; /* Make all letters uppercase */
+    font-weight: normal;
+    font-size: 1.5rem; /* Adjust the size as necessary */
+    margin: 0; /* Remove default margin */
+    padding-top: 10px; /* Add some space below the header */
 }
 
 .content {
@@ -117,16 +112,31 @@
 
 /* Styling the Read More link */
 .box a {
-    text-decoration: none; /* Remove underline */
     color: white; /* Set default color to white */
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
+    width: 100%;
 
 }
 
 .box a:visited {
     color: white; /* Ensure visited links remain white */
+}
+
+.box button{
+    border: none;
+    text-decoration: none; /* Remove underline */
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: #8d8d8d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100%; /* Makes the button take the full width of the box */
+    font-size: 12px;
+}
+
+.box button:hover {
+    background-color: rgba(55, 55, 190, 0.8);
 }
 
 /* Media Queries for Responsive Layout */

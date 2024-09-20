@@ -1,6 +1,6 @@
 /* Set width to 60% of the screen and justify text */
 .singles {
-    width: 60%;
+    width: 65%;
     margin: 0 auto; /* Center the content horizontally */
     text-align: justify; /* Justify the text */
 }
