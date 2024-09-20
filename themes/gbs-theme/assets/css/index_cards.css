@@ -3,31 +3,32 @@
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    gap: 50vw;
+    margin-right: 5%;
+    margin-left: 5%;
+    gap: 85%;
     align-items: center;
 }
 
 .article-navigation a {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: gray;
-    color: white;
+    padding: 2px 5px;
+    background-color: rgb(211, 211, 211);
+    color: rgba(0, 0, 0, 0.5);
     text-decoration: none;
     text-transform: uppercase;
     border-radius: 5px;
     transition: background-color 0.3s;
     flex: 1; /* Ensure buttons take up equal space */
     text-align: center;
+    font-size: 0.8rem;
 }
 
 .article-navigation a:hover {
-    background-color: orange;
+    background-color: rgba(40, 40, 255, 0.2);
 }
 
 .article-navigation a:visited {
-    color: white; /* Ensure visited links remain white */
+    color: rgba(0, 0, 0, 0.5); /* Ensure visited links remain white */
 }
 
 .article-navigation .prev-link {
