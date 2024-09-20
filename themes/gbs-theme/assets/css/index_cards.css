@@ -1,28 +1,28 @@
 /* -------------------- Styling the next/previous buttons ------------------- */
 .article-navigation {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Pushes the buttons to opposite ends */
     margin-top: 20px;
-    margin-right: 5vw;
-    margin-left: 5vw;
-    gap: 80vw;
+    padding-right: 5vw;
+    padding-left: 5vw;
     align-items: center;
 }
 
 .article-navigation a {
     display: inline-block;
-    padding: 2px 5px;
+    padding: 5px 5px; /* Adjust padding for inner space */
     background-color: rgb(211, 211, 211);
     color: rgba(0, 0, 0, 0.5);
     text-decoration: none;
     text-transform: uppercase;
     border-radius: 5px;
     transition: background-color 0.3s;
-    flex: 1; /* Ensure buttons take up equal space */
     text-align: center;
     font-size: 0.8rem;
+    width: auto;  /* Fixed width */
+    height: auto;  /* Fixed height */
+    line-height: auto; /* Centers text vertically */
 }
-
 .article-navigation a:hover {
     background-color: rgba(40, 40, 255, 0.2);
 }
