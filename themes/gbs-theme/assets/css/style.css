@@ -29,8 +29,8 @@ main {
     margin: 0 auto; /* Centers the paragraph */
     text-align: justify;
     text-justify: inter-word; /* Improves spacing between words */
-    padding-left: 15rem;
-    padding-right: 15rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
     background: #fff; /* Optional: sets background color */
     border-radius: 5px; /* Optional: rounds the corners */
     padding-top: 30px;
@@ -44,8 +44,8 @@ main {
     .regular_text{
         padding-left: 1rem; /* Optional: adds some padding around the text */
         padding-right: 1rem;
-        display: block;
-        text-align: center;
+        display: contents;
+        text-align: justify;
     }
 }
 
@@ -61,10 +61,17 @@ main {
 }
 
 .regular_text img {
-    width: 50%; /* Sets a fixed width for the image */
+    width: 25rem; /* Sets a fixed width for the image */
     height: auto; /* Maintains the aspect ratio of the image */
     flex-shrink: 0; /* Prevents the image from shrinking */
     border-radius: 10px;
+}
+
+@media (max-width: 1200px){
+    .regular_text img {
+        width: 60%; /* Sets a fixed width for the image */
+        margin-top: 15px;
+    }
 }
 
 /* --------------------------------- Footer --------------------------------- */

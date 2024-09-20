@@ -93,13 +93,6 @@
       <description>Our contact information</description>
     </item>
     <item>
-      <title>Blog</title>
-      <link>//localhost:1313/blog/</link>
-      <pubDate>Fri, 24 May 2024 17:18:40 -0400</pubDate>
-      <guid>//localhost:1313/blog/</guid>
-      <description>Global Business Services Blog</description>
-    </item>
-    <item>
       <title>Positions</title>
       <link>//localhost:1313/footer/positions/</link>
       <pubDate>Fri, 24 May 2024 21:04:30 -0400</pubDate>
