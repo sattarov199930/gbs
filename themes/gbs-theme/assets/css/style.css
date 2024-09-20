@@ -42,8 +42,8 @@ main {
 
 @media (max-width: 1200px){
     .regular_text{
-        padding-left: 1rem; /* Optional: adds some padding around the text */
-        padding-right: 1rem;
+        padding-left: 5vw; /* Optional: adds some padding around the text */
+        padding-right: 5vw;
         display: contents;
         text-align: justify;
     }
@@ -69,10 +69,10 @@ main {
 
 @media (max-width: 1200px){
     .regular_text img {
-        width: auto; /* Sets a fixed width for the image */
+        width: 90vw; /* Sets a fixed width for the image */
         margin-top: 15px;
-        padding-left: 1rem; /* Optional: adds some padding around the text */
-        padding-right: 1rem;
+        padding-left: 5vw; /* Optional: adds some padding around the text */
+        padding-right: 5vw;
     }
 }
 
