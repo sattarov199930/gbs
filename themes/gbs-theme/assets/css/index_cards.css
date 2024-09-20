@@ -3,9 +3,9 @@
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    margin-right: 5%;
-    margin-left: 5%;
-    gap: 85%;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    gap: 80vw;
     align-items: center;
 }
 
