@@ -61,10 +61,12 @@ main {
 }
 
 .regular_text img {
-    width: 25rem; /* Sets a fixed width for the image */
+    width: auto; /* Sets a fixed width for the image */
     height: auto; /* Maintains the aspect ratio of the image */
     flex-shrink: 0; /* Prevents the image from shrinking */
     border-radius: 10px;
+    padding-left: 1rem; /* Optional: adds some padding around the text */
+    padding-right: 1rem;
 }
 
 @media (max-width: 1200px){
