@@ -10,42 +10,36 @@ function MissionSection() {
       title: "Clean Water Access",
       description: "Ensuring every community has access to safe, clean drinking water through innovative infrastructure solutions.",
       image: "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=800&q=80",
-      icon: "💧"
     },
     {
       id: 2,
       title: "Sustainable Infrastructure",
       description: "Building resilient water systems that protect our environment and serve future generations.",
       image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
-      icon: "🏗️"
     },
     {
       id: 3,
       title: "Global Partnership",
       description: "Collaborating with international organizations to deliver impactful projects across continents.",
       image: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&q=80",
-      icon: "🤝"
     },
     {
       id: 4,
       title: "Innovation & Technology",
       description: "Leveraging cutting-edge technology to optimize water management and treatment processes.",
       image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80",
-      icon: "⚡"
     },
     {
       id: 5,
       title: "Community Impact",
       description: "Transforming lives by improving health, education, and economic opportunities through water access.",
       image: "https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=800&q=80",
-      icon: "❤️"
     },
     {
       id: 6,
       title: "Environmental Protection",
       description: "Preserving natural water resources and ecosystems while meeting humanity's growing water needs.",
       image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&q=80",
-      icon: "🌿"
     }
   ];
 
@@ -73,9 +67,6 @@ function MissionSection() {
                   alt={mission.title}
                   className="mission-image"
                 />
-                <div className="mission-overlay">
-                  <span className="mission-icon">{mission.icon}</span>
-                </div>
               </div>
               <div className="mission-content">
                 <h3 className="mission-card-title">{mission.title}</h3>

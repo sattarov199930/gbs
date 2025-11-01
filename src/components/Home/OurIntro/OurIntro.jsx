@@ -8,25 +8,21 @@ function OurIntro() {
   const values = [
     {
       id: 0,
-      icon: "🎯",
       title: "Excellence",
       description: "We deliver outstanding results through meticulous attention to detail and unwavering commitment to quality in every project we undertake."
     },
     {
       id: 1,
-      icon: "🤝",
       title: "Integrity",
       description: "Transparency and honesty guide our relationships with clients, partners, and communities, building trust that lasts for decades."
     },
     {
       id: 2,
-      icon: "💡",
       title: "Innovation",
       description: "We embrace cutting-edge technologies and creative solutions to tackle the world's most challenging infrastructure problems."
     },
     {
       id: 3,
-      icon: "🌱",
       title: "Sustainability",
       description: "Environmental responsibility is at our core, ensuring projects benefit both present communities and future generations."
     }
@@ -36,37 +32,31 @@ function OurIntro() {
     { 
       year: "1995", 
       event: "Company Founded", 
-      icon: "🚀",
       description: "Global Business Services was born from a vision to revolutionize water infrastructure. A small team of passionate engineers came together to create lasting impact."
     },
     { 
       year: "2003", 
       event: "First International Project", 
-      icon: "🌍",
       description: "We expanded beyond borders, delivering our first major international water treatment facility in Southeast Asia, marking the beginning of our global presence."
     },
     { 
       year: "2010", 
       event: "1000+ Projects Completed", 
-      icon: "🏆",
       description: "A major milestone achieved - over 1000 successful projects delivered across 30 countries, impacting millions of lives with clean water access."
     },
     { 
       year: "2015", 
       event: "Partnership with World Bank", 
-      icon: "🤝",
       description: "Recognized as a trusted partner by the World Bank, opening doors to collaborate on large-scale sustainable infrastructure projects worldwide."
     },
     { 
       year: "2020", 
       event: "Global Expansion", 
-      icon: "📈",
       description: "Strategic expansion into new markets across Africa, Latin America, and Eastern Europe, establishing regional offices and local partnerships."
     },
     { 
       year: "2024", 
       event: "Industry Leaders", 
-      icon: "⭐",
       description: "Recognized as global leaders in sustainable water infrastructure, setting new standards for innovation, quality, and environmental stewardship."
     }
   ];
@@ -109,22 +99,18 @@ function OurIntro() {
             {/* Stats Grid */}
             <div className="about-stats-grid">
               <div className="about-stat-card">
-                <div className="stat-icon">🌍</div>
                 <div className="stat-number">50+</div>
                 <div className="stat-label">Countries Served</div>
               </div>
               <div className="about-stat-card">
-                <div className="stat-icon">💼</div>
                 <div className="stat-number">2000+</div>
                 <div className="stat-label">Projects Delivered</div>
               </div>
               <div className="about-stat-card">
-                <div className="stat-icon">👥</div>
                 <div className="stat-number">500+</div>
                 <div className="stat-label">Expert Team</div>
               </div>
               <div className="about-stat-card">
-                <div className="stat-icon">⭐</div>
                 <div className="stat-number">30</div>
                 <div className="stat-label">Years Experience</div>
               </div>
