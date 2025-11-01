@@ -1,0 +1,377 @@
+/* =========================
+   About Us Page Styles
+   ========================= */
+
+/* Hero Section */
+.about-hero {
+  background: linear-gradient(135deg, #200d68 0%, #8857b9 100%);
+  padding: 6rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-hero::before {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  top: -200px;
+  left: -100px;
+  pointer-events: none;
+}
+
+.about-hero::after {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  bottom: -150px;
+  right: -100px;
+  pointer-events: none;
+}
+
+.hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+  animation: fadeInUp 0.8s ease-out 0.2s backwards;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Story Section */
+.story-section {
+  padding: 5rem 2rem;
+  background: linear-gradient(to bottom, #f8f6ff 0%, #ebe6ff 100%);
+}
+
+.story-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.story-image-section {
+  position: relative;
+}
+
+.story-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.story-image-section:hover .story-image {
+  transform: scale(1.02);
+}
+
+.story-text-section {
+  animation: fadeInRight 0.8s ease-out;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.section-title-left {
+  font-size: 2.5rem;
+  color: #200d68;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+  font-weight: 700;
+}
+
+.story-text {
+  font-size: 1.1rem;
+  color: #02033d;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+/* Mission, Vision, Values Section */
+.mvv-section {
+  padding: 5rem 2rem;
+  background: linear-gradient(to bottom, #ebe6ff 0%, #ffffff 100%);
+}
+
+.mvv-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #200d68;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  color: #02033d;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  line-height: 1.7;
+}
+
+.mvv-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.mvv-card {
+  padding: 2.5rem;
+  background: rgba(255, 255, 255, 0.6);
+  border: 2px solid rgba(99, 102, 241, 0.2);
+  border-left: 4px solid #4f3c95;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.mvv-card:hover {
+  background: rgba(99, 102, 241, 0.1);
+  border-left-width: 6px;
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(99, 102, 241, 0.2);
+}
+
+.mvv-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.mvv-title {
+  font-size: 1.5rem;
+  color: #200d68;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  font-weight: 700;
+}
+
+.mvv-description {
+  color: #02033d;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Leadership Section */
+.leadership-section {
+  padding: 5rem 2rem;
+  background: linear-gradient(to bottom, #f8f6ff 0%, #ebe6ff 100%);
+}
+
+.leadership-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.leader-card {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.6);
+  border: 2px solid rgba(99, 102, 241, 0.2);
+  border-left: 4px solid #4f3c95;
+  transition: all 0.3s ease;
+}
+
+.leader-card:hover {
+  background: rgba(255, 255, 255, 0.9);
+  border-left-width: 6px;
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(99, 102, 241, 0.2);
+}
+
+.leader-image-wrapper {
+  flex-shrink: 0;
+}
+
+.leader-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid rgba(99, 102, 241, 0.3);
+  transition: all 0.3s ease;
+}
+
+.leader-card:hover .leader-image {
+  border-color: #4f3c95;
+  transform: scale(1.05);
+}
+
+.leader-info {
+  flex: 1;
+}
+
+.leader-name {
+  font-size: 1.5rem;
+  color: #200d68;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+  font-weight: 700;
+}
+
+.leader-position {
+  font-size: 1rem;
+  color: #4f3c95;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.leader-bio {
+  font-size: 0.95rem;
+  color: #02033d;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* =========================
+   Responsive Design
+   ========================= */
+
+@media (max-width: 1200px) {
+  .mvv-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1080px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .section-title,
+  .section-title-left {
+    font-size: 2rem;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .story-image {
+    height: 400px;
+  }
+
+  .leadership-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero,
+  .story-section,
+  .mvv-section,
+  .leadership-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .section-title,
+  .section-title-left {
+    font-size: 1.8rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+  }
+
+  .story-image {
+    height: 300px;
+  }
+
+  .story-text {
+    font-size: 1rem;
+  }
+
+  .leader-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .leader-image {
+    width: 120px;
+    height: 120px;
+  }
+}
