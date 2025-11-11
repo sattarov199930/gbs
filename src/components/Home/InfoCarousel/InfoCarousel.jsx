@@ -104,11 +104,11 @@ function ServicesCard() {
   ];
 
   return (
-    <section className="info-section" style={{'--bg-image': 'url(https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80)'}}>
+    <section className="info-section" style={{'--bg-image': 'url(/images/home/Home_Carousel_Services.jpg)'}}>
       <div className="card-container">
         <div className="card-side">
           <div className="card-image">
-            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80" alt="Professional services" />
+            <img src="/images/home/Home_Carousel_Services.jpg" alt="Professional services" />
           </div>
           <div className="card-text">
             <p>We deliver comprehensive management solutions and advanced water treatment systems, combining technical excellence with strategic oversight to ensure project success from conception to completion.</p>
@@ -187,7 +187,7 @@ function IndustriesCard() {
   ];
 
   return (
-    <section className="info-section" style={{'--bg-image': 'url(https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80)'}}>
+    <section className="info-section" style={{'--bg-image': 'url(/images/home/Home_Carousel_Industries.jpg)'}}>
       <div className="card-container reverse">
         <div className="card-side">
           <h2 className="card-title">Industries</h2>
@@ -202,7 +202,7 @@ function IndustriesCard() {
         </div>
         <div className="card-side">
           <div className="card-image">
-            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80" alt="Industries we serve" />
+            <img src="/images/home/Home_Carousel_Industries.jpg" alt="Industries we serve" />
           </div>
         </div>
       </div>
@@ -220,31 +220,31 @@ function CustomersCard() {
     { 
       id: 1, 
       name: "World Bank", 
-      logo: "🏦",
+      logo: "/images/logos/world_bank_logo.png",
       description: "Partnered on sustainable infrastructure projects across emerging markets, delivering clean water solutions to over 2 million people."
     },
     { 
       id: 2, 
       name: "Asian Development Bank", 
-      logo: "🏛️",
+      logo: "/images/logos/Asian_Development_Bank_logo.png",
       description: "Collaborated on regional water treatment facilities, supporting economic growth and environmental sustainability in Southeast Asia."
     },
     { 
       id: 3, 
       name: "European Investment Bank", 
-      logo: "🇪🇺",
+      logo: "/images/logos/European_Investment_Bank_logo.png",
       description: "Implemented cutting-edge management systems for large-scale water infrastructure projects across the European Union."
     },
     { 
       id: 4, 
-      name: "International Finance Corp", 
-      logo: "💼",
+      name: "Islamic Development Bank", 
+      logo: "/images/logos/IsDB.png",
       description: "Provided technical expertise for private sector water treatment initiatives, ensuring long-term operational excellence."
     },
     { 
       id: 5, 
       name: "EBRD", 
-      logo: "🌍",
+      logo: "/images/logos/EBRD.png",
       description: "Delivered comprehensive project management services for water infrastructure development in Central and Eastern Europe."
     }
   ];
@@ -288,7 +288,7 @@ function CustomersCard() {
               onMouseEnter={() => setActiveCustomer(customer.id)}
               onMouseLeave={() => setActiveCustomer(null)}
             >
-              <span className="logo-icon">{customer.logo}</span>
+              <img src={customer.logo} alt={`${customer.name} logo`} className="logo-icon" />
               <span className="logo-name">{customer.name}</span>
             </div>
           ))}

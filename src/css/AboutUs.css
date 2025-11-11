@@ -248,18 +248,6 @@
   box-shadow: 0 15px 35px rgba(99, 102, 241, 0.2);
 }
 
-.leader-image-wrapper {
-  flex-shrink: 0;
-}
-
-.leader-image {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border: 3px solid rgba(99, 102, 241, 0.3);
-  transition: all 0.3s ease;
-}
-
 .leader-card:hover .leader-image {
   border-color: #4f3c95;
   transform: scale(1.05);

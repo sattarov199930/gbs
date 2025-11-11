@@ -5,42 +5,35 @@ function AboutUs() {
     {
       name: "Dr. Michael Chen",
       position: "Chief Executive Officer",
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
       bio: "20+ years leading water infrastructure innovation with a PhD in Environmental Engineering from MIT."
     },
     {
       name: "Sarah Williams",
       position: "Chief Operations Officer",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
       bio: "Former VP at Fortune 500 engineering firm. Expert in operational excellence and project delivery."
     },
     {
       name: "David Rodriguez",
       position: "Chief Technology Officer",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
       bio: "Pioneer in SCADA systems and automation. Led digital transformation initiatives across the industry."
     },
     {
       name: "Dr. Amira Patel",
       position: "Chief Sustainability Officer",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
       bio: "Environmental scientist passionate about water conservation and sustainable infrastructure solutions."
     }
   ];
 
   const values = [
     {
-      icon: "🎯",
       title: "Mission",
       description: "To design, implement, and maintain world-class water infrastructure systems that ensure safe, reliable, and sustainable water resources for communities and industries worldwide."
     },
     {
-      icon: "🔭",
       title: "Vision",
       description: "To be the global leader in innovative water infrastructure solutions, setting the standard for excellence, sustainability, and technological advancement in the industry."
     },
     {
-      icon: "💎",
       title: "Values",
       description: "Integrity, innovation, collaboration, and environmental stewardship guide everything we do. We're committed to excellence and making a positive impact on the world."
     }
@@ -119,9 +112,6 @@ function AboutUs() {
           <div className="leadership-grid">
             {leadership.map((leader, index) => (
               <div key={index} className="leader-card">
-                <div className="leader-image-wrapper">
-                  <img src={leader.image} alt={leader.name} className="leader-image" />
-                </div>
                 <div className="leader-info">
                   <h3 className="leader-name">{leader.name}</h3>
                   <p className="leader-position">{leader.position}</p>

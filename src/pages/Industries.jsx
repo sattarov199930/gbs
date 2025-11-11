@@ -9,7 +9,7 @@ function Industries() {
   const industries = [
     {
       id: 0,
-      title: "Municipal Water & Utilities",
+      title: "Waste",
       image: "https://media.istockphoto.com/id/505176828/photo/water-treatment-plant-at-sunset.webp?s=2048x2048&w=is&k=20&c=cNDhmbKSUQFKaTBtNPuOjj9wsMTS1hNeFzKojtwBlBI=",
       description: "We deliver comprehensive water treatment and distribution solutions for municipalities worldwide. Our expertise spans drinking water treatment plants, wastewater facilities, and distribution networks that serve millions of people daily.",
       capabilities: [
@@ -24,7 +24,7 @@ function Industries() {
     },
     {
       id: 1,
-      title: "Industrial Manufacturing",
+      title: "Water & Utilities",
       image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80",
       description: "Supporting manufacturing operations with process water systems, industrial wastewater treatment, and facility infrastructure. We optimize water usage, reduce costs, and ensure environmental compliance for industrial clients.",
       capabilities: [
@@ -39,7 +39,7 @@ function Industries() {
     },
     {
       id: 2,
-      title: "Energy & Power Generation",
+      title: "Health",
       image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&q=80",
       description: "Providing critical water infrastructure for power generation facilities including thermal, nuclear, and renewable energy plants. Our solutions ensure reliable operations and environmental stewardship.",
       capabilities: [
@@ -54,7 +54,7 @@ function Industries() {
     },
     {
       id: 3,
-      title: "Agriculture & Irrigation",
+      title: "Rural Development",
       image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&q=80",
       description: "Developing efficient irrigation systems and agricultural water management solutions that maximize crop yields while conserving water resources. Our technology-driven approach supports sustainable farming practices.",
       capabilities: [
@@ -69,7 +69,7 @@ function Industries() {
     },
     {
       id: 4,
-      title: "Commercial & Residential",
+      title: "Education",
       image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
       description: "Designing and implementing building water systems for commercial complexes, residential developments, and mixed-use projects. We ensure reliable water supply, efficient usage, and sustainable operations.",
       capabilities: [
@@ -84,7 +84,52 @@ function Industries() {
     },
     {
       id: 5,
-      title: "Infrastructure & Transportation",
+      title: "Urban Planning",
+      image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80",
+      description: "Supporting major infrastructure projects with comprehensive water and wastewater solutions. From highways to transit systems, we deliver the essential utilities that keep infrastructure functioning.",
+      capabilities: [
+        "Highway Drainage Systems",
+        "Tunnel Water Management",
+        "Transit Facility Water Systems",
+        "Stormwater Management",
+        "Pumping Stations Design",
+        "Infrastructure Asset Management"
+      ],
+      stats: { projects: "120+", length: "2000km", stations: "150+" }
+    },
+    {
+      id: 6,
+      title: "Finance",
+      image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80",
+      description: "Supporting major infrastructure projects with comprehensive water and wastewater solutions. From highways to transit systems, we deliver the essential utilities that keep infrastructure functioning.",
+      capabilities: [
+        "Highway Drainage Systems",
+        "Tunnel Water Management",
+        "Transit Facility Water Systems",
+        "Stormwater Management",
+        "Pumping Stations Design",
+        "Infrastructure Asset Management"
+      ],
+      stats: { projects: "120+", length: "2000km", stations: "150+" }
+    },
+    {
+      id: 7,
+      title: "Industrial Automation",
+      image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80",
+      description: "Supporting major infrastructure projects with comprehensive water and wastewater solutions. From highways to transit systems, we deliver the essential utilities that keep infrastructure functioning.",
+      capabilities: [
+        "Highway Drainage Systems",
+        "Tunnel Water Management",
+        "Transit Facility Water Systems",
+        "Stormwater Management",
+        "Pumping Stations Design",
+        "Infrastructure Asset Management"
+      ],
+      stats: { projects: "120+", length: "2000km", stations: "150+" }
+    },
+    {
+      id: 8,
+      title: "R&D",
       image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80",
       description: "Supporting major infrastructure projects with comprehensive water and wastewater solutions. From highways to transit systems, we deliver the essential utilities that keep infrastructure functioning.",
       capabilities: [

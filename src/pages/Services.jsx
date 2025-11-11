@@ -22,7 +22,7 @@ function Services() {
     },
     {
       id: 1,
-      title: "Water Treatment Systems",
+      title: "Water and Waste",
       image: "https://images.squarespace-cdn.com/content/v1/64cc1c1774e9c62c74a6e61b/7d8d36fb-b461-4cec-83ed-158a29b94700/Watertreatment.jpeg",
       shortDesc: "Advanced solutions for clean water delivery",
       fullDesc: "We design, implement, and maintain state-of-the-art water treatment systems that ensure safe, reliable water supply for communities and industries. Our solutions incorporate the latest technologies in filtration, purification, and distribution.",
@@ -77,13 +77,60 @@ function Services() {
         "Operational Optimization",
         "Capacity Building & Training",
         "Due Diligence & Audits",
-        "Strategic Planning & Advisory"
+        "Strategic Planning & Advisory",
+        "Contract and Construction Supervision",
+        "Engineering Design"
       ]
     },
     {
       id: 5,
       title: "Operations & Maintenance",
       image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80",
+      shortDesc: "Reliable performance through expert care",
+      fullDesc: "We provide comprehensive operations and maintenance services to ensure your facilities operate at peak efficiency. Our experienced teams deliver proactive maintenance, rapid response to issues, and continuous performance optimization.",
+      features: [
+        "Facility Operations Management",
+        "Preventive Maintenance Programs",
+        "Emergency Response Services",
+        "Performance Monitoring & Analytics",
+        "Asset Management",
+        "Spare Parts & Supply Management"
+      ]
+    },
+    {
+      id: 6,
+      title: "Solid Waste",
+      image: "https://evreka.co/wp-content/uploads/2021/04/49577-min-scaled.jpg",
+      shortDesc: "Reliable performance through expert care",
+      fullDesc: "We provide comprehensive operations and maintenance services to ensure your facilities operate at peak efficiency. Our experienced teams deliver proactive maintenance, rapid response to issues, and continuous performance optimization.",
+      features: [
+        "Facility Operations Management",
+        "Preventive Maintenance Programs",
+        "Emergency Response Services",
+        "Performance Monitoring & Analytics",
+        "Asset Management",
+        "Spare Parts & Supply Management"
+      ]
+    },
+    {
+      id: 7,
+      title: "Health Management",
+      image: "https://uoflhealth.org/wp-content/uploads/2025/03/UofL-Health-%E2%80%93-South-Hospital-Celebrates-1-Year-as-Inpatient-Hospital-scaled.jpg",
+      shortDesc: "Reliable performance through expert care",
+      fullDesc: "We provide comprehensive operations and maintenance services to ensure your facilities operate at peak efficiency. Our experienced teams deliver proactive maintenance, rapid response to issues, and continuous performance optimization.",
+      features: [
+        "Facility Operations Management",
+        "Preventive Maintenance Programs",
+        "Emergency Response Services",
+        "Performance Monitoring & Analytics",
+        "Asset Management",
+        "Spare Parts & Supply Management"
+      ]
+    },
+    {
+      id: 8,
+      title: "Research and Development",
+      image: "https://www.masterfluids.com/blog/wp-content/uploads/2023/09/The-Essential-Role-of-Manufacturing-RD-in-the-Supply-Chain-1.png",
       shortDesc: "Reliable performance through expert care",
       fullDesc: "We provide comprehensive operations and maintenance services to ensure your facilities operate at peak efficiency. Our experienced teams deliver proactive maintenance, rapid response to issues, and continuous performance optimization.",
       features: [
