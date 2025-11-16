@@ -81,7 +81,6 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  margin-bottom: 4rem;
 }
 
 /* =========================
@@ -179,7 +178,7 @@
 }
 
 .mission-card:hover {
-  transform: scale(1.03) translateY(-10px);
+  transform: scale(1.02) translateY(-5px);
   opacity: 1;
 }
 

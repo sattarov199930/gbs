@@ -46,12 +46,12 @@ function MissionSection() {
   return (
     <section className="mission-section">
       <div className="mission-container">
-        <div className="mission-header">
+        {/*<div className="mission-header">
           <h2 className="mission-title">Our Mission</h2>
           <p className="mission-subtitle">
             Transforming the world one water project at a time
           </p>
-        </div>
+        </div>*/}
 
         <div className="mission-grid">
           {missions.map((mission) => (

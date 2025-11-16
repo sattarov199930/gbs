@@ -20,7 +20,7 @@ function InfoCarousel() {
 
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % totalCards);
-    }, 4000); //Autoscroll time
+    }, 5000); //Autoscroll time
 
     return () => clearInterval(interval);
   }, [currentIndex, isPaused, totalCards]);
@@ -100,7 +100,7 @@ function ServicesCard() {
   const stats = [
     { number: 50,   label: "IFI Financed Projects" },
     { number: 100,  label: "Clients Worldwide" },
-    { number: 10,   label: "Countries of Operation" }
+    { number: 12,   label: "Countries of Operation" }
   ];
 
   return (
@@ -111,7 +111,8 @@ function ServicesCard() {
             <img src="/images/home/Home_Carousel_Services.jpg" alt="Professional services" />
           </div>
           <div className="card-text">
-            <p>We deliver comprehensive management solutions and advanced water treatment systems, combining technical excellence with strategic oversight to ensure project success from conception to completion.</p>
+            <p>We deliver comprehensive, high-quality services across the full project management lifecycle, from project identification and design to implementation, monitoring, and evaluation.
+              Our corporate philosophy centers on uncompromising quality and the long-term sustainability of outcomes.</p>
           </div>
         </div>
         <div className="card-side">
@@ -179,12 +180,12 @@ function StatItem({ number, label }) {
 // ==================== INDUSTRIES CARD ====================
 function IndustriesCard() {
   const industries = [
-    "Municipal Water",
-    "Industrial Treatment",
+    "Utilties and Infrastructure",
+    "Education Sector",
     "Energy Sector",
-    "Agriculture",
-    "Infrastructure"
-  ];
+    "Agriculture & Agribusiness",
+    "R&D and Technical Assesment"
+    ];
 
   return (
     <section className="info-section" style={{'--bg-image': 'url(/images/home/Home_Carousel_Industries.jpg)'}}>
@@ -192,7 +193,19 @@ function IndustriesCard() {
         <div className="card-side">
           <h2 className="card-title">Industries</h2>
           <div className="card-text">
-            <p>Our expertise spans critical sectors where water management and operational excellence are paramount. From municipal infrastructure to industrial facilities, we bring decades of specialized knowledge in water treatment, environmental compliance, and sustainable resource management. We serve public utilities, manufacturing plants, energy facilities, and agricultural operations, ensuring efficient, compliant, and future-ready water systems.</p>
+            <p>
+              We provide consulting and management services across utilities, higher education, engineering, and agricultural sectors, 
+              helping organizations optimize operations, improve efficiency, and achieve sustainable results. 
+              
+              We support system development, maintenance, equipment procurement, operational and technical training for the water and waste management. 
+              
+              We also deliver R&D and industrial solutions including PCB design, PLC and control systems programming, 
+              UAV and drone development, product manufacturability assessments, and reliability and sustainability testing. 
+              
+              In education, we provide tailored technical and management 
+              training programs, while in agriculture, we focus on irrigation management, equipment optimization, and farmer training to enhance 
+              productivity and promote sustainable practices.
+            </p>
             <div className="tag-list">
               {industries.map((industry, index) => (
                 <span key={index} className="tag">{industry}</span>

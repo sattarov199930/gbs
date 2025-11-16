@@ -30,13 +30,8 @@ function OurIntro() {
 
   const milestones = [
     { 
-      year: "1995", 
+      year: "2002", 
       event: "Company Founded", 
-      description: "Global Business Services was born from a vision to revolutionize water infrastructure. A small team of passionate engineers came together to create lasting impact."
-    },
-    { 
-      year: "2003", 
-      event: "First International Project", 
       description: "We expanded beyond borders, delivering our first major international water treatment facility in Southeast Asia, marking the beginning of our global presence."
     },
     { 
@@ -67,54 +62,43 @@ function OurIntro() {
     <section className="about-section">
       {/* Main About Content */}
       <div className="about-container">
-        <div className="about-header">
-          <h2 className="about-title">About Global Business Services</h2>
-          <p className="about-subtitle">
-            Transforming visions into reality for nearly three decades
-          </p>
-        </div>
-
         <div className="about-content-grid">
           {/* Story Side */}
           <div className="about-story">
             <div className="story-card">
               <h3 className="story-heading">Our Story</h3>
               <p className="story-text">
-                Founded in 1995, Global Business Services emerged from a simple yet powerful vision: 
-                to deliver world-class water infrastructure solutions that transform communities and 
-                protect our planet's most precious resource.
+                Global Business Services (GBS) is a private consulting firm with a successful track record in the Central Asia and Eastern Europe. Since 2002, GBS has been providing professional consulting services in the various economic and social fields including agriculture and natural resources management, healthcare, public utility, urban infrastructure, and other sectors.
               </p>
               <p className="story-text">
-                What began as a small team of passionate engineers has grown into a global leader, 
-                serving over 50 countries and impacting millions of lives. Our expertise spans from 
-                project conception to completion, ensuring every initiative meets the highest standards 
-                of quality, sustainability, and innovation.
+                GBS is a team of professionals experienced in developing hands-on strategies for capturing project achievements. The GBS team is focused on giving clients unique competitive advantages resulted from joint efforts devoted to solving complex issues and seizing far-reaching opportunities. In its work, GBS relies on permanent employees with long and successful experience in implementing projects financed by international financial institutions (Asian Development Bank (ADB), World Bank, European Bank for Reconstruction and Development (EBRD), French Development Agency (AFD), Swiss State Secretariat for Economic Affairs (SECO), Islamic Development Bank (IDB), KfW, IFC, and etc.).
               </p>
               <p className="story-text">
-                Today, we partner with the world's leading financial institutions and development 
-                organizations, bringing expertise, integrity, and innovation to every challenge we face.
+              External experts are always ready to participate in projects. Criteria, according to which external experts are selected, include educational background, technical experience and regional practice, communication skills, and etc. Such cooperation is beneficial for both parties: for GBS, it gives access to industrial solutions; associate experts build their investment project implementation capacities  
               </p>
             </div>
 
             {/* Stats Grid */}
+            {/*
             <div className="about-stats-grid">
               <div className="about-stat-card">
                 <div className="stat-number">50+</div>
-                <div className="stat-label">Countries Served</div>
+                <div className="stat-label">IFI-financed Projects</div>
               </div>
               <div className="about-stat-card">
-                <div className="stat-number">2000+</div>
-                <div className="stat-label">Projects Delivered</div>
+                <div className="stat-number">100+</div>
+                <div className="stat-label">Clients in Central Asia and Europe</div>
               </div>
               <div className="about-stat-card">
-                <div className="stat-number">500+</div>
-                <div className="stat-label">Expert Team</div>
+                <div className="stat-number">12+</div>
+                <div className="stat-label">Countries</div>
               </div>
               <div className="about-stat-card">
-                <div className="stat-number">30</div>
-                <div className="stat-label">Years Experience</div>
+                <div className="stat-number">25+</div>
+                <div className="stat-label">Years of Experience</div>
               </div>
             </div>
+            */}
           </div>
 
           {/* Values Side */}
@@ -144,7 +128,7 @@ function OurIntro() {
 
         {/* Timeline Section */}
         <div className="about-timeline-section">
-          <h3 className="timeline-heading">Our Journey</h3>
+          {/*<h3 className="timeline-heading">Our Journey</h3>*/}
           <div className="timeline-bar">
             {milestones.map((milestone, index) => (
               <div 
