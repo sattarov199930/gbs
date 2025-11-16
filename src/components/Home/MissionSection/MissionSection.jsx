@@ -7,38 +7,38 @@ function MissionSection() {
   const missions = [
     {
       id: 1,
-      title: "Clean Water Access",
-      description: "Ensuring every community has access to safe, clean drinking water through innovative infrastructure solutions.",
+      title: "Utilities Management",
+      description: "Ensuring resilient and compliant utility services that support long-term community growth.",
       image: "/images/home/Home_Mission_Water.jpg",
     },
     {
       id: 2,
       title: "Sustainable Infrastructure",
-      description: "Building resilient water systems that protect our environment and serve future generations.",
+      description: "Delivering high-quality, sustainable architectural solutions that advance client goals and strengthen the built environment.",
       image: "/images/home/Home_Mission_Infrastructure.jpg",
     },
     {
       id: 3,
       title: "Global Partnership",
-      description: "Collaborating with international organizations to deliver impactful projects across continents.",
+      description: "Collaborating with international organizations and corporations to deliver impactful projects across continents.",
       image: "/images/home/Home_Mission_Partnership.jpg",
     },
     {
       id: 4,
       title: "Innovation & Technology",
-      description: "Leveraging cutting-edge technology to optimize water management and treatment processes.",
+      description: "Advancing next-generation industrial electronic and autonomous systems through precise design, intelligent automation, and rigorous engineering innovation.",
       image: "/images/home/Home_Mission_Technology.jpg",
     },
     {
       id: 5,
       title: "Community Impact",
-      description: "Transforming lives by improving health, education, and economic opportunities through water access.",
+      description: "Transforming communities by improving health, education, and economic opportunities.",
       image: "/images/home/Home_Mission_Community.jpg",
     },
     {
       id: 6,
       title: "Environmental Protection",
-      description: "Preserving natural water resources and ecosystems while meeting humanity's growing water needs.",
+      description: "Protecting natural resources and environments through science-driven solutions that promote sustainability, compliance, and long-term ecological resilience.",
       image: "/images/home/Home_Mission_Protection.jpg",
     }
   ];

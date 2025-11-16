@@ -194,15 +194,16 @@ function IndustriesCard() {
           <h2 className="card-title">Industries</h2>
           <div className="card-text">
             <p>
-              We provide consulting and management services across utilities, higher education, engineering, and agricultural sectors, 
+              We provide consulting and management services across utilities, higher education, engineering, industrial solutions, and agricultural sectors, 
               helping organizations optimize operations, improve efficiency, and achieve sustainable results. 
               
               We support system development, maintenance, equipment procurement, operational and technical training for the water and waste management. 
               
-              We also deliver R&D and industrial solutions including PCB design, PLC and control systems programming, 
-              UAV and drone development, product manufacturability assessments, and reliability and sustainability testing. 
+              Our engineers are capable of delivering R&D and industrial solutions including custom Printed-Circuit-Board (PCB) designs, Programmable-Logic-Controllers (PLCs)
+              and control systems programming, 
+              UAV and drone development, product manufacturability assessments, reliability and sustainability testing. 
               
-              In education, we provide tailored technical and management 
+              In the education and utilities sectors, we provide tailored technical and management 
               training programs, while in agriculture, we focus on irrigation management, equipment optimization, and farmer training to enhance 
               productivity and promote sustainable practices.
             </p>
@@ -292,7 +293,7 @@ function CustomersCard() {
   return (
     <section className="info-section">
       <div className="card-container column">
-        <h2 className="card-title centered">Our Customers</h2>
+        <h2 className="card-title centered">Our Partners</h2>
         <div className="logo-grid">
           {customers.map(customer => (
             <div 

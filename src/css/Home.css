@@ -20,17 +20,8 @@
 
 .hero-content h1 {
   font-size: 5rem;
-  margin-bottom: 2rem;
-  font-weight: 700;
-}
-
-.hero-content ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 @media (max-width: 1080px) {

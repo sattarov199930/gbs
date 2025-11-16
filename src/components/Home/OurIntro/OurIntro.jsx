@@ -9,22 +9,26 @@ function OurIntro() {
     {
       id: 0,
       title: "Excellence",
-      description: "We deliver outstanding results through meticulous attention to detail and unwavering commitment to quality in every project we undertake."
+      description: "We deliver outstanding results through meticulous attention to detail and unwavering commitment to quality in every project we undertake.",
+      backgroundImage: "/images/home/Home_OurIntro_Excellence.jpg"  // Add this
     },
     {
       id: 1,
       title: "Integrity",
-      description: "Transparency and honesty guide our relationships with clients, partners, and communities, building trust that lasts for decades."
+      description: "Transparency and honesty guide our relationships with clients, partners, and communities, building trust that lasts for decades.",
+      backgroundImage: "/images/home/Home_OurIntro_Integrity.jpg"  // Add this
     },
     {
       id: 2,
       title: "Innovation",
-      description: "We embrace cutting-edge technologies and creative solutions to tackle the world's most challenging infrastructure problems."
+      description: "We embrace cutting-edge technologies and creative solutions to tackle the most challenging infrastructure and management problems.",
+      backgroundImage: "/images/home/Home_OurIntro_Innovation.jpg"  // Add this
     },
     {
       id: 3,
       title: "Sustainability",
-      description: "Environmental responsibility is at our core, ensuring projects benefit both present communities and future generations."
+      description: "Environmental responsibility is at our core, ensuring projects benefit both present communities and future generations.",
+      backgroundImage: "/images/home/Home_OurIntro_Sustain.jpg"  // Add this
     }
   ];
 
@@ -68,13 +72,15 @@ function OurIntro() {
             <div className="story-card">
               <h3 className="story-heading">Our Story</h3>
               <p className="story-text">
-                Global Business Services (GBS) is a private consulting firm with a successful track record in the Central Asia and Eastern Europe. Since 2002, GBS has been providing professional consulting services in the various economic and social fields including agriculture and natural resources management, healthcare, public utility, urban infrastructure, and other sectors.
+                Global Business Services (GBS) is a private consulting company with a successful track record in Central Asia and Eastern Europe. 
+                Since 2002, GBS has been providing professional consulting services in the various economic, engineering, and social fields including agriculture, natural resources management, 
+                healthcare, public utility, urban infrastructure, and other sectors.
               </p>
               <p className="story-text">
-                GBS is a team of professionals experienced in developing hands-on strategies for capturing project achievements. The GBS team is focused on giving clients unique competitive advantages resulted from joint efforts devoted to solving complex issues and seizing far-reaching opportunities. In its work, GBS relies on permanent employees with long and successful experience in implementing projects financed by international financial institutions (Asian Development Bank (ADB), World Bank, European Bank for Reconstruction and Development (EBRD), French Development Agency (AFD), Swiss State Secretariat for Economic Affairs (SECO), Islamic Development Bank (IDB), KfW, IFC, and etc.).
-              </p>
-              <p className="story-text">
-              External experts are always ready to participate in projects. Criteria, according to which external experts are selected, include educational background, technical experience and regional practice, communication skills, and etc. Such cooperation is beneficial for both parties: for GBS, it gives access to industrial solutions; associate experts build their investment project implementation capacities  
+                We are a team of dedicated professionals experienced in developing hands-on strategies for capturing project achievements. 
+                Our experts have a long and successful track record in triaging and implementing projects financed by international financial institutions like
+                Asian Development Bank (ADB), World Bank, European Bank for Reconstruction and Development (EBRD), French Development Agency (AFD), 
+                Swiss State Secretariat for Economic Affairs (SECO), Islamic Development Bank (IDB), KfW, IFC, et al.
               </p>
             </div>
 
@@ -116,7 +122,7 @@ function OurIntro() {
                 </button>
               ))}
             </div>
-            <div className="value-display">
+            <div className="value-display" style={{backgroundImage: `url(${values[activeValue].backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
               <div className="value-icon-large">{values[activeValue].icon}</div>
               <h4 className="value-title">{values[activeValue].title}</h4>
               <p className="value-description" key={activeValue}>

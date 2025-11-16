@@ -10,18 +10,6 @@ function HomePage(){
         <section className="hero-section">
             <div className="hero-content">
                 <h1>Global Expertise. Uncompromising Quality.</h1>
-                <ul>
-                    <li>
-                        Management
-                    </li>
-                    <li>
-                        R&D
-                    </li>
-                    <li>
-                        Assesments
-                    </li>
-                </ul>
-
             </div>
         </section>
 
