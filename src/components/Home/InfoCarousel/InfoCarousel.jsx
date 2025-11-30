@@ -260,6 +260,30 @@ function CustomersCard() {
       name: "EBRD", 
       logo: "/images/logos/EBRD.png",
       description: "Delivered comprehensive project management services for water infrastructure development in Central and Eastern Europe."
+    },
+    { 
+      id: 6, 
+      name: "AFD", 
+      logo: "/images/logos/AFD_logo.png",
+      description: "Delivered comprehensive project management services for water infrastructure development in Central and Eastern Europe."
+    },
+    { 
+      id: 7, 
+      name: "SECO", 
+      logo: "/images/logos/SECO.png",
+      description: "Delivered comprehensive project management services for water infrastructure development in Central and Eastern Europe."
+    },
+    { 
+      id: 8, 
+      name: "KfW", 
+      logo: "/images/logos/KfW.svg",
+      description: "Delivered comprehensive project management services for water infrastructure development in Central and Eastern Europe."
+    },
+    { 
+      id: 9, 
+      name: "IFC", 
+      logo: "/images/logos/IFC.png",
+      description: "Delivered comprehensive project management services for water infrastructure development in Central and Eastern Europe."
     }
   ];
 

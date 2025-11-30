@@ -392,6 +392,7 @@
   margin-bottom: 0rem;
   padding: 0rem;
   position: relative;
+  flex-wrap: wrap;
 }
 
 .logo-item {
@@ -450,7 +451,6 @@
 /* ------------------------ Responsive mobile design ------------------------ */
 @media (max-width: 1080px) {
   .logo-grid {
-    flex-wrap: wrap;
     gap: 1.5rem;
   }
 

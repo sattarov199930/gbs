@@ -9,7 +9,7 @@ function Footer() {
         {/* Company Info Section */}
         <div className="footer-section">
           <div className="footer-logo-container">
-            <img src={Logo} alt="GBS Logo" className="footer-logo" />
+            <img src={Logo} alt="GBS" className="footer-logo" />
             <span className="footer-logo-text">Global Business Services</span>
           </div>
           <p className="footer-description">

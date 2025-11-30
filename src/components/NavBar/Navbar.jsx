@@ -20,7 +20,7 @@ function MainNavBar() {
     { to: "/Industries", label: "Industries" },
     { to: "/Capabilities", label: "Capabilities" },
     { to: "/AboutUs", label: "About Us" },
-    { to: "/Careers", label: "Careers" },
+    //{ to: "/Careers", label: "Careers" },
     { to: "/Contact", label: "Contact" },
   ];
 
@@ -28,7 +28,7 @@ function MainNavBar() {
     <nav className="main_navbar">
       <Link to="/" className="navbar-logo-link" onClick={() => setMobileOpen(false)}>
         <div className="navbar-logo-container">
-          <img src={Logo} alt="GBS Logo" className="navbar-logo" />
+          <img src={Logo} alt="GBS" className="navbar-logo" />
           <span className="navbar-logo-text">Global Business Services</span>
         </div>
       </Link>
