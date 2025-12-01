@@ -6,6 +6,8 @@
   background-size: cover;
   background-position: center;
   height: 90vh;
+  width: 100vw;
+  overflow-x: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,21 +18,30 @@
   text-align: center;
   z-index: 2;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  
 }
 
 .hero-content h1 {
-  font-size: 5rem;
+  font-size: clamp(1.5rem, 6vw, 5rem) !important; /* min 1.5rem, max 5rem, scales with viewport */
   margin-bottom: 1rem;
   font-weight: 600;
 }
 
 @media (max-width: 1080px) {
+  .hero-section {
+    height: 80vh;
+  }
+
   .hero-content h1 {
     font-size: 4rem;
-}
+  }
 }
 
 @media (max-width: 768px) {
+  .hero-section {
+    height: 70vh;
+  }
+
   .hero-content h1 {
     font-size: 3rem;
   }

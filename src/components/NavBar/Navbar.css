@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #fffffff5;
+  background-color: #ffffff;
   padding: 0 clamp(1rem, 3vw, 5em);
   min-height: 100px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);

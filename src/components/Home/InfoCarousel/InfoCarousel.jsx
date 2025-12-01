@@ -234,55 +234,55 @@ function CustomersCard() {
     { 
       id: 1, 
       name: "World Bank", 
-      logo: "/images/logos/world_bank_logo.png",
+      logo: "/images/logos/partners/world_bank_logo.png",
       description: "Partnered on sustainable infrastructure projects across emerging markets, delivering clean water solutions to over 2 million people."
     },
     { 
       id: 2, 
       name: "Asian Development Bank", 
-      logo: "/images/logos/Asian_Development_Bank_logo.png",
+      logo: "/images/logos/partners/Asian_Development_Bank_logo.png",
       description: "Collaborated on regional water treatment facilities, supporting economic growth and environmental sustainability in Southeast Asia."
     },
     { 
       id: 3, 
       name: "European Investment Bank", 
-      logo: "/images/logos/European_Investment_Bank_logo.png",
+      logo: "/images/logos/partners/European_Investment_Bank_logo.png",
       description: "Implemented cutting-edge management systems for large-scale water infrastructure projects across the European Union."
     },
     { 
       id: 4, 
       name: "Islamic Development Bank", 
-      logo: "/images/logos/IsDB.png",
+      logo: "/images/logos/partners/IsDB.png",
       description: "Provided technical expertise for private sector water treatment initiatives, ensuring long-term operational excellence."
     },
     { 
       id: 5, 
       name: "EBRD", 
-      logo: "/images/logos/EBRD.png",
+      logo: "/images/logos/partners/EBRD.png",
       description: "Delivered comprehensive project management services for water infrastructure development in Central and Eastern Europe."
     },
     { 
       id: 6, 
       name: "AFD", 
-      logo: "/images/logos/AFD_logo.png",
+      logo: "/images/logos/partners/AFD_logo.png",
       description: "Delivered comprehensive project management services for water infrastructure development in Central and Eastern Europe."
     },
     { 
       id: 7, 
       name: "SECO", 
-      logo: "/images/logos/SECO.png",
+      logo: "/images/logos/partners/SECO.png",
       description: "Delivered comprehensive project management services for water infrastructure development in Central and Eastern Europe."
     },
     { 
       id: 8, 
       name: "KfW", 
-      logo: "/images/logos/KfW.svg",
+      logo: "/images/logos/partners/KfW.svg",
       description: "Delivered comprehensive project management services for water infrastructure development in Central and Eastern Europe."
     },
     { 
       id: 9, 
       name: "IFC", 
-      logo: "/images/logos/IFC.png",
+      logo: "/images/logos/partners/IFC.png",
       description: "Delivered comprehensive project management services for water infrastructure development in Central and Eastern Europe."
     }
   ];
