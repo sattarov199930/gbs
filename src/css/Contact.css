@@ -79,6 +79,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
+
+  /* make all children stretch to equal height */
+  align-items: stretch;
 }
 
 .section-heading {
@@ -95,6 +98,10 @@
 /* Contact Information Section */
 .contact-info-section {
   animation: fadeInLeft 0.8s ease-out;
+  display: flex;
+  flex-direction: column;
+  height: 100%;  /* stretch to full height of the grid row */
+  justify-content: space-between;
 }
 
 @keyframes fadeInLeft {
@@ -109,10 +116,12 @@
 }
 
 .info-grid {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
-  margin-bottom: 3rem;
+  flex-grow: 1; /* take up remaining height */
+  height: 100%;
+  justify-content: space-between;
 }
 
 .info-card {
@@ -191,6 +200,9 @@
 /* Contact Form Section */
 .contact-form-section {
   animation: fadeInRight 0.8s ease-out;
+  display: flex;
+  flex-direction: column;
+  height: 100%;  /* stretch to full height of the grid row */
 }
 
 @keyframes fadeInRight {

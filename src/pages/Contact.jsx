@@ -57,9 +57,8 @@ function Contact() {
               <div className="info-card">
                 <h3 className="info-title">Office Address</h3>
                 <p className="info-text">
-                  123 Infrastructure Boulevard<br />
-                  Suite 500<br />
-                  Boston, MA 02101<br />
+                  23 Tippling Rock Road<br />
+                  Subdury, MA 01776<br />
                   United States
                 </p>
               </div>
@@ -67,22 +66,21 @@ function Contact() {
               <div className="info-card">
                 <h3 className="info-title">Phone & Email</h3>
                 <p className="info-text">
-                  Main: +1 (617) 555-0100<br />
-                  Fax: +1 (617) 555-0101<br />
-                  <a href="mailto:info@globalbusiness.com" className="info-link">info@globalbusiness.com</a>
+                  Main: +1 (857) 294-4003<br />
+                  <a href="mailto:info@globalbusiness.com" className="info-link">info@gbs.us.com</a> <br />
                 </p>
               </div>
 
               <div className="info-card">
                 <h3 className="info-title">Business Hours</h3>
                 <p className="info-text">
-                  Monday - Friday: 8:00 AM - 6:00 PM<br />
-                  Saturday: 9:00 AM - 2:00 PM<br />
-                  Sunday: Closed<br />
+                  Monday - Thursday: 8:00 AM - 6:00 PM<br />
+                  Friday: 9:00 AM - 5:00 PM<br />
                   <span className="timezone">Eastern Time (ET)</span>
                 </p>
               </div>
 
+              {/*
               <div className="info-card">
                 <h3 className="info-title">Follow Us</h3>
                 <div className="social-links">
@@ -112,17 +110,19 @@ function Contact() {
                   </a>
                 </div>
               </div>
+              */}
             </div>
-
-           
           </div>
 
           {/* Contact Form */}
           <div className="contact-form-section">
             <h2 className="section-heading">Send Us a Message</h2>
+            
+            {/*
             <p className="form-description">
               Have a question or want to discuss a project? Fill out the form below and our team will get back to you within 24 hours.
             </p>
+            */}
 
             <form className="contact-form" onSubmit={handleSubmit}>
               <div className="form-row">
