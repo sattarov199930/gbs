@@ -19,6 +19,11 @@ const starters = [
   { type: "Location", title: "Tashkent", href: "/contact", text: "21 Khusnutdin Asomov Street." },
 ];
 
+const menus = {
+  services: { label: "services", to: "/services", items: services },
+  industries: { label: "industries", to: "/industries", items: industries },
+};
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
@@ -26,6 +31,7 @@ export default function Navbar() {
   const [query, setQuery] = useState("");
   const [searchOpen, setSearchOpen] = useState(false);
   const inputRef = useRef(null);
+  const closeTimer = useRef(null);
   const location = useLocation();
 
   useEffect(() => {
@@ -47,6 +53,8 @@ export default function Navbar() {
     return () => document.body.classList.remove("nav-locked");
   }, [open, searchOpen]);
 
+  useEffect(() => () => window.clearTimeout(closeTimer.current), []);
+
   useEffect(() => {
     if (!searchOpen) return undefined;
     const timer = window.setTimeout(() => inputRef.current?.focus(), 160);
@@ -63,9 +71,26 @@ export default function Navbar() {
   const results = query.trim() ? searchContent(query) : starters;
   const closeSearch = () => setSearchOpen(false);
   const hoverable = () => window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+  const showMenu = (id) => {
+    window.clearTimeout(closeTimer.current);
+    setMenu(id);
+  };
+  const hideMenu = () => {
+    if (!hoverable()) return;
+    window.clearTimeout(closeTimer.current);
+    closeTimer.current = window.setTimeout(() => setMenu(null), 160);
+  };
+  const closeMenu = () => {
+    if (!hoverable()) return;
+    window.clearTimeout(closeTimer.current);
+    setMenu(null);
+  };
 
   return (
-    <header className={`site-header ${scrolled || open || searchOpen ? "is-solid" : ""} ${searchOpen ? "is-searching" : ""}`}>
+    <header
+      className={`site-header ${scrolled || open || searchOpen || menu ? "is-solid" : ""} ${searchOpen ? "is-searching" : ""} ${menu ? "is-menu" : ""}`}
+      onMouseLeave={hideMenu}
+    >
       <a className="skip-link" href="#content">
         Skip to content
       </a>
@@ -81,38 +106,34 @@ export default function Navbar() {
                 key={link.to}
                 className={`nav-item ${menu === link.menu ? "is-open" : ""}`}
                 onMouseEnter={() => {
-                  if (hoverable()) setMenu(link.menu);
-                }}
-                onMouseLeave={() => {
-                  if (hoverable()) setMenu(null);
+                  if (hoverable()) showMenu(link.menu);
                 }}
               >
                 <button
                   type="button"
                   className="nav-link"
                   aria-expanded={menu === link.menu}
-                  onClick={() => setMenu(link.menu)}
+                  onClick={() => showMenu(link.menu)}
                 >
                   {link.label}
                   <span className="caret" aria-hidden="true" />
                 </button>
                 <div className="dropdown">
                   <div className="dropdown-panel">
-                  <div className="dropdown-head">
-                    <p>{link.label}</p>
-                    <Link to={link.to} onClick={() => setOpen(false)}>
-                      View all
-                    </Link>
-                  </div>
-                  <ul>
-                    {(link.menu === "services" ? services : industries).map((item) => (
-                      <li key={item.slug}>
-                        <Link to={`${link.to}#${item.slug}`} onClick={() => setOpen(false)}>
-                          <strong>{item.title}</strong>
+                    <ul>
+                      {menus[link.menu].items.map((item) => (
+                        <li key={item.slug}>
+                          <Link to={`${link.to}#${item.slug}`} onClick={() => setOpen(false)}>
+                            {item.title}
+                          </Link>
+                        </li>
+                      ))}
+                      <li>
+                        <Link className="dropdown-all" to={link.to} onClick={() => setOpen(false)}>
+                          All {menus[link.menu].label}
                         </Link>
                       </li>
-                    ))}
-                  </ul>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -121,12 +142,13 @@ export default function Navbar() {
                 key={link.to}
                 to={link.to}
                 className={({ isActive }) => `nav-link ${isActive ? "is-active" : ""}`}
+                onMouseEnter={closeMenu}
               >
                 {link.label}
               </NavLink>
             )
           )}
-          <Link to="/contact" className="btn btn-small nav-cta">
+          <Link to="/contact" className="btn btn-small nav-cta" onMouseEnter={closeMenu}>
             Contact
           </Link>
         </nav>
@@ -138,6 +160,7 @@ export default function Navbar() {
             aria-expanded={searchOpen}
             onClick={() => {
               setOpen(false);
+              setMenu(null);
               setSearchOpen((value) => !value);
             }}
           >
