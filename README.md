@@ -1,16 +1,32 @@
-# React + Vite
+# Global Business Services
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React site for Global Business Services, the Tashkent consulting firm established in 2002. Copy and project records follow the firm’s public materials (gbs.uz and its Devex profile).
 
-Currently, two official plugins are available:
+## See it on your computer
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+You need [Node.js](https://nodejs.org), which includes `npm`.
 
-## React Compiler
+```bash
+cd path/to/gbs
+npm install
+npm run dev
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Vite prints a local address, usually http://localhost:5173. Open that in a browser.
 
-## Expanding the ESLint configuration
+Other commands:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm run build     # production files in dist/
+npm run preview   # serve the production build
+npm run lint
+```
+
+## Where to edit
+
+- `src/data/content.js` — words, projects, services, phone numbers
+- `src/pages` — one file per page
+- `src/components` — navigation, footer, shared pieces
+- `src/styles/site.css` — the visual system
+
+The contact and careers forms open an email to info@gbs.uz. They do not store messages on this website.

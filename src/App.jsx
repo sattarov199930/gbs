@@ -1,58 +1,87 @@
-/* -------------------------------------------------------------------------- */
-/*                          Standard React functions                          */
-/* -------------------------------------------------------------------------- */
-import { Routes, Route } from 'react-router-dom'
+import { useEffect } from "react";
+import { Navigate, Route, Routes, useLocation } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import CookieNotice from "./components/CookieNotice";
+import HomePage from "./pages/Home";
+import Services from "./pages/Services";
+import Industries from "./pages/Industries";
+import Projects from "./pages/Projects";
+import ProjectDetail from "./pages/ProjectDetail";
+import Capabilities from "./pages/Capabilities";
+import AboutUs from "./pages/AboutUs";
+import Locations from "./pages/Locations";
+import Careers from "./pages/Careers";
+import Contact from "./pages/Contact";
+import Legal from "./pages/Legal";
+import NotFound from "./pages/NotFound";
 
-/* -------------------------------------------------------------------------- */
-/*                           User Components Import                           */
-/* -------------------------------------------------------------------------- */
-import MainNavBar     from './components/NavBar/Navbar';
-import Footer         from './components/Footer/Footer';
+function ScrollManager() {
+  const { pathname, hash } = useLocation();
 
-import HomePage       from './pages/Home';
-import Careers        from './pages/Careers';
-import Customers      from './pages/Customers';
-import Industries     from './pages/Industries';
-import Locations      from './pages/Locations';
-import Services       from './pages/Services';
-import AboutUs        from './pages/AboutUs';
-import Contact        from './pages/Contact';
-import Capabilities   from './pages/Capabilities';
+  useEffect(() => {
+    if (hash) {
+      const node = document.getElementById(hash.slice(1));
+      if (node) {
+        node.scrollIntoView({ behavior: "smooth", block: "start" });
+        return;
+      }
+    }
+    window.scrollTo(0, 0);
+  }, [pathname, hash]);
 
-import Cookie         from './pages/Miscellaneous/Cookie';
-import TermsOfService from './pages/Miscellaneous/TermsOfService';
-import PrivacyPolicy  from './pages/Miscellaneous/PrivacyPolicy';
+  useEffect(() => {
+    const bar = document.querySelector(".scroll-progress");
+    const onScroll = () => {
+      const height = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = height > 0 ? window.scrollY / height : 0;
+      if (bar) bar.style.transform = `scaleX(${progress})`;
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
-/* -------------------------------------------------------------------------- */
-/*                              Main App Function                             */
-/* -------------------------------------------------------------------------- */
-function App() {
-  console.log("App loaded");
+  return <div className="scroll-progress" aria-hidden="true" />;
+}
+
+export default function App() {
+  const location = useLocation();
 
   return (
-    <div>
-      <MainNavBar />
-      <main className='main-content'>
+    <>
+      <ScrollManager />
+      <Navbar />
+      <CookieNotice />
+      <main id="content" key={location.pathname} className="page">
         <Routes>
-          <Route path="/"                 element={<HomePage        />} />
-          <Route path="/Capabilities"     element={<Capabilities    />} />
-          <Route path="/Careers"          element={<Careers         />} />
-          <Route path="/Customers"        element={<Customers       />} />
-          <Route path="/Industries"       element={<Industries      />} />
-          <Route path="/Locations"        element={<Locations       />} />
-          <Route path="/Services"         element={<Services        />} />
-          <Route path="/AboutUs"          element={<AboutUs         />} />
-          <Route path="/Contact"          element={<Contact         />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/industries" element={<Industries />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/:id" element={<ProjectDetail />} />
+          <Route path="/capabilities" element={<Capabilities />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/locations" element={<Locations />} />
+          <Route path="/careers" element={<Careers />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy-policy" element={<Legal page="privacy" />} />
+          <Route path="/terms-of-service" element={<Legal page="terms" />} />
+          <Route path="/cookie-policy" element={<Legal page="cookies" />} />
 
-          <Route path="/cookie-policy"    element={<Cookie          />} />
-          <Route path="/terms-of-service" element={<TermsOfService  />} />
-          <Route path="/privacy-policy"   element={<PrivacyPolicy   />} />
+          <Route path="/Services" element={<Navigate to="/services" replace />} />
+          <Route path="/Industries" element={<Navigate to="/industries" replace />} />
+          <Route path="/Capabilities" element={<Navigate to="/capabilities" replace />} />
+          <Route path="/AboutUs" element={<Navigate to="/about" replace />} />
+          <Route path="/Locations" element={<Navigate to="/locations" replace />} />
+          <Route path="/Careers" element={<Navigate to="/careers" replace />} />
+          <Route path="/Contact" element={<Navigate to="/contact" replace />} />
+          <Route path="/Customers" element={<Navigate to="/projects" replace />} />
 
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <Footer />
-    </div>
-  )
+    </>
+  );
 }
-
-export default App

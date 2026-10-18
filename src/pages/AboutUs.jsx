@@ -1,129 +1,110 @@
-import "../css/AboutUs.css";
+import { Link } from "react-router-dom";
+import PageHero from "../components/PageHero";
+import { usePageTitle } from "../hooks/usePageTitle";
+import { values } from "../data/content";
 
-function AboutUs() {
-  const leadership = [
-    {
-      name: "Dr. Michael Chen",
-      position: "Chief Executive Officer",
-      bio: "20+ years leading water infrastructure innovation with a PhD in Environmental Engineering from MIT."
-    },
-    {
-      name: "Sarah Williams",
-      position: "Chief Operations Officer",
-      bio: "Former VP at Fortune 500 engineering firm. Expert in operational excellence and project delivery."
-    },
-    {
-      name: "David Rodriguez",
-      position: "Chief Technology Officer",
-      bio: "Pioneer in SCADA systems and automation. Led digital transformation initiatives across the industry."
-    },
-    {
-      name: "Dr. Amira Patel",
-      position: "Chief Sustainability Officer",
-      bio: "Environmental scientist passionate about water conservation and sustainable infrastructure solutions."
-    }
-  ];
+const timeline = [
+  {
+    year: "2002",
+    title: "The firm is established",
+    text: "Global Business Services begins in Tashkent as a private consultancy for economic and social assignments in Central Asia.",
+  },
+  {
+    year: "IFI practice",
+    title: "A lender-facing record",
+    text: "The team builds its work on programmes financed by ADB, the World Bank, EBRD, AFD, SECO, the Islamic Development Bank, KfW, and IFC.",
+  },
+  {
+    year: "Registration",
+    title: "Known to the institutions",
+    text: "GBS is registered with the World Bank and EBRD, with ADB under DACON No. 003966 and the Islamic Development Bank under No. G0772.",
+  },
+  {
+    year: "Today",
+    title: "The record so far",
+    text: "More than fifty IFI-financed projects and about a hundred clients. The work is answered from Tashkent.",
+  },
+];
 
-  const values = [
-    {
-      title: "Mission",
-      description: "To design, implement, and maintain world-class water infrastructure systems that ensure safe, reliable, and sustainable water resources for communities and industries worldwide."
-    },
-    {
-      title: "Vision",
-      description: "To be the global leader in innovative water infrastructure solutions, setting the standard for excellence, sustainability, and technological advancement in the industry."
-    },
-    {
-      title: "Values",
-      description: "Integrity, innovation, collaboration, and environmental stewardship guide everything we do. We're committed to excellence and making a positive impact on the world."
-    }
-  ];
+export default function AboutUs() {
+  usePageTitle(
+    "About",
+    "Global Business Services began in Tashkent in 2002. The practice covers utilities, infrastructure, health, agriculture, and the management questions beside them."
+  );
 
   return (
-    <div className="about-page">
-      {/* Hero Section */}
-      <section className="about-hero">
-        <div className="hero-content">
-          <h1 className="hero-title">About Us</h1>
-          <p className="hero-subtitle">
-            Two decades of engineering excellence, delivering innovative water infrastructure 
-            solutions that power communities and industries across the globe.
-          </p>
-        </div>
-      </section>
-
-      {/* Story Section */}
-      <section className="story-section">
-        <div className="story-container">
-          <div className="story-grid">
-            <div className="story-image-section">
-              <img 
-                src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80" 
-                alt="Our Story"
-                className="story-image"
-              />
-            </div>
-            <div className="story-text-section">
-              <h2 className="section-title-left">Our Story</h2>
-              <p className="story-text">
-                Founded in 2005, we began with a simple yet powerful vision: to transform how the world 
-                manages its most precious resource—water. What started as a small team of passionate engineers 
-                has grown into a global leader in water infrastructure solutions.
-              </p>
-              <p className="story-text">
-                Over the past two decades, we've delivered more than 1,000 projects across 30+ countries, 
-                serving millions of people and countless industries. Our expertise spans municipal water systems, 
-                industrial applications, and cutting-edge automation technologies.
-              </p>
-              <p className="story-text">
-                Today, we stand at the forefront of innovation, combining traditional engineering excellence 
-                with advanced technologies like AI, IoT, and smart systems to create sustainable solutions 
-                for the challenges of tomorrow.
-              </p>
-            </div>
+    <>
+      <PageHero
+        eyebrow="About"
+        title="Quality, and the sustainability of the achievement."
+        deck="That is the firm’s own philosophy. Partnerships are meant to last, and they are built on trust, respect, professionalism, and commitment to the goal."
+        image="/images/city-dusk.jpg"
+      />
+      <section className="section">
+        <div className="container split">
+          <div>
+            <p className="eyebrow">Since 2002</p>
+            <h2>Hands-on strategies, not a stack of generalities.</h2>
+          </div>
+          <div className="prose">
+            <p>
+              The practice began in Tashkent in 2002. The fields are practical ones: agriculture and
+              natural resources, healthcare, public utilities, urban infrastructure, and the
+              management questions that sit beside them.
+            </p>
+            <p>
+              The team is focused on advantages that come from joint work — solving a complicated
+              issue, or taking an opportunity that is further away than the current budget cycle.
+              Permanent employees carry assignments financed by international institutions. They are
+              not a temporary roster assembled for a proposal.
+            </p>
+            <p>
+              Devex describes the firm accurately: business optimisation and improvement, with
+              particular weight on institutional strengthening, financial advisory, and turnaround.
+              The aim is to help a client build value, manage risk, and perform.
+            </p>
+            <Link className="text-link" to="/capabilities">
+              How the team is organised
+            </Link>
           </div>
         </div>
       </section>
-
-      {/* Mission, Vision, Values */}
-      <section className="mvv-section">
-        <div className="mvv-container">
-          <h2 className="section-title">Mission, Vision & Values</h2>
-          <div className="mvv-grid">
-            {values.map((value, index) => (
-              <div key={index} className="mvv-card">
-                <div className="mvv-icon">{value.icon}</div>
-                <h3 className="mvv-title">{value.title}</h3>
-                <p className="mvv-description">{value.description}</p>
-              </div>
+      <section className="section section-ink">
+        <div className="container timeline">
+          {timeline.map((item) => (
+            <article key={item.year}>
+              <p>{item.year}</p>
+              <h3>{item.title}</h3>
+              <span>{item.text}</span>
+            </article>
+          ))}
+        </div>
+      </section>
+      <section className="section">
+        <div className="container">
+          <p className="eyebrow">What the work is judged by</p>
+          <div className="value-grid">
+            {values.map((value) => (
+              <article key={value.title}>
+                <h2>{value.title}</h2>
+                <p>{value.text}</p>
+              </article>
             ))}
           </div>
         </div>
       </section>
-
-      {/* Leadership Section */}
-      <section className="leadership-section">
-        <div className="leadership-container">
-          <h2 className="section-title">Leadership Team</h2>
-          <p className="section-description">
-            Our executive team brings decades of combined experience in engineering, technology, 
-            and sustainable infrastructure development.
-          </p>
-          <div className="leadership-grid">
-            {leadership.map((leader, index) => (
-              <div key={index} className="leader-card">
-                <div className="leader-info">
-                  <h3 className="leader-name">{leader.name}</h3>
-                  <p className="leader-position">{leader.position}</p>
-                  <p className="leader-bio">{leader.bio}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+      <section className="section section-paper">
+        <div className="container quote-block">
+          <blockquote>
+            “GBS strives to deliver innovative, inclusive and sustainable solutions. The firm’s
+            philosophy is quality and sustainability of achievements.”
+          </blockquote>
+          <p>From the firm’s own description of its practice.</p>
+          <Link className="btn btn-dark" to="/contact">
+            Contact GBS
+          </Link>
         </div>
       </section>
-    </div>
+    </>
   );
 }
-
-export default AboutUs;
